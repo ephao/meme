@@ -13,7 +13,7 @@
         更多详情，请 <a target="_blank" href="https://indie-startups.notion.site/">点此查看</a>.
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <LandingLink href="https://s.zhaikr.com/c-payment" target="_blank" rel="noopener">立即加入
+        <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11" target="_blank" rel="noopener">立即加入
         </LandingLink>
         <LandingLink size="lg" styleName="outline" rel="noopener" href="https://indie-startups.notion.site/"
           target="_blank">课程简介

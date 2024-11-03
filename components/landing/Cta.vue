@@ -7,7 +7,7 @@
       课程正如其标题所言，希望帮助所有希望自主 Web 开发的朋友摸到门道，通过循序渐进的学习，达成能独立开发并发布 Web App 的目标
     </p>
     <div class="flex mt-5">
-      <LandingLink href="https://s.zhaikr.com/c-payment" styleName="inverted">立即加入</LandingLink>
+      <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11" styleName="inverted">立即加入</LandingLink>
     </div>
   </div>
 </template>

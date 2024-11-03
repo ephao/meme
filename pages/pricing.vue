@@ -39,7 +39,7 @@ const pricing = [
     ],
     button: {
       text: "立即购买",
-      link: "https://s.zhaikr.com/c-payment",
+      link: "https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11",
     },
   },
   {
