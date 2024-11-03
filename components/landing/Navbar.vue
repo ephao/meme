@@ -45,22 +45,22 @@ const open = ref(false);
       <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: open, hidden: !open }">
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           <li v-for="item of menuitems">
-            <NuxtLink :to="item.path"
-              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 relative"
+            <NuxtLink :to="item.path" class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 relative"
               :class="{ 'font-medium text-primary-600 after:content-[\'\'] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-primary-600': $route.path === item.path }">
               {{ item.title }}
             </NuxtLink>
           </li>
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="https://s.zhaikr.com/c"
-            styleName="muted" block size="md" target="_blank" rel="noopener">课程简介</LandingLink>
-          <LandingLink href="https://s.zhaikr.com/c-payment" size="md" block target="_blank" rel="noopener">立即加入</LandingLink>
+          <LandingLink href="https://indie-startups.notion.site/" styleName="muted" block size="md" target="_blank"
+            rel="noopener">课程简介</LandingLink>
+          <LandingLink href="https://s.zhaikr.com/c-payment" size="md" block target="_blank" rel="noopener">立即加入
+          </LandingLink>
         </div>
       </nav>
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <NuxtLink to="https://s.zhaikr.com/c" target="_blank" rel="noopener">课程简介</NuxtLink>
+          <NuxtLink to="https://indie-startups.notion.site/" target="_blank" rel="noopener">课程简介</NuxtLink>
           <LandingLink href="https://s.zhaikr.com/c-payment" size="md" target="_blank" rel="noopener">立即加入</LandingLink>
         </div>
       </div>
