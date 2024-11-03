@@ -54,14 +54,14 @@ const open = ref(false);
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
           <LandingLink href="https://s.zhaikr.com/c"
-            styleName="muted" block size="md">课程简介</LandingLink>
-          <LandingLink href="https://s.zhaikr.com/c-payment" size="md" block>立即加入</LandingLink>
+            styleName="muted" block size="md" target="_blank" rel="noopener">课程简介</LandingLink>
+          <LandingLink href="https://s.zhaikr.com/c-payment" size="md" block target="_blank" rel="noopener">立即加入</LandingLink>
         </div>
       </nav>
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <NuxtLink to="https://s.zhaikr.com/c">课程简介</NuxtLink>
-          <LandingLink href="https://s.zhaikr.com/c-payment" size="md">立即加入</LandingLink>
+          <NuxtLink to="https://s.zhaikr.com/c" target="_blank" rel="noopener">课程简介</NuxtLink>
+          <LandingLink href="https://s.zhaikr.com/c-payment" size="md" target="_blank" rel="noopener">立即加入</LandingLink>
         </div>
       </div>
     </header>

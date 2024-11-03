@@ -10,7 +10,7 @@
         Web 开发从入门到上线
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        更多详情，请 <a href="https://indie-startups.notion.site/">点此查看</a>.
+        更多详情，请 <a target="_blank" href="https://indie-startups.notion.site/">点此查看</a>.
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink href="https://s.zhaikr.com/c-payment" target="_blank" rel="noopener">立即加入
