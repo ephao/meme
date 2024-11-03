@@ -9,7 +9,7 @@
         class="text-2xl text-gray-400 hover:text-gray-600 transition-colors duration-300">
         <Icon name="mdi:wechat" />
       </a>
-      <a title="关注我的 Web 开发课程" href="https://s.zhaikr.com/c" target="_blank" rel="noopener noreferrer"
+      <a title="关注我的 Web 开发课程" href="https://indie-startups.notion.site/" target="_blank" rel="noopener noreferrer"
         class="text-2xl text-gray-400 hover:text-gray-600 transition-colors duration-300">
         <Icon name="mdi:school" />
       </a>
