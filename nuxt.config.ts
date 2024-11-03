@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         { name: 'description', content: '从零开始学习 Web 开发，掌握前端技术栈，完成项目从开发到上线的全过程' },
         { property: 'og:title', content: 'Web 开发从入门到上线' },
         { property: 'og:description', content: '从零开始学习 Web 开发，掌握前端技术栈，完成项目从开发到上线的全过程' },
-        { property: 'og:image', content: '/og-image.jpg' },
+        { property: 'og:image', content: '/og-image-0.jpg' },
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@interjc' },
