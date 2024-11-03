@@ -41,7 +41,10 @@ export default defineNuxtConfig({
           content:
             "从零开始学习 Web 开发，掌握前端技术栈，完成项目从开发到上线的全过程",
         },
-        { name: "twitter:image", content: "/og-image-0.jpg" },
+        {
+          name: "twitter:image",
+          content: "https://justincourse.com/og-image-0.jpg",
+        },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
