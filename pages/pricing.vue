@@ -26,7 +26,7 @@ const pricing = [
   },
   {
     name: "标准版",
-    price: "¥194.4",
+    price: "¥259.2",
     originalPrice: "¥648",
     popular: true,
     features: [
