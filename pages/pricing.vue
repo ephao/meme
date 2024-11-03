@@ -39,12 +39,12 @@ const pricing = [
     ],
     button: {
       text: "立即购买",
-      link: "/",
+      link: "https://s.zhaikr.com/c-payment",
     },
   },
   {
     name: "个性化辅导",
-    price: "联系我们",
+    price: "Let's Talk",
     popular: false,
     features: [
       "个性化课程定制",
@@ -54,7 +54,7 @@ const pricing = [
       "24/7 专属支持",
     ],
     button: {
-      text: "Contact us",
+      text: "联系我们",
       link: "/contact",
     },
   },
