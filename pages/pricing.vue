@@ -30,12 +30,12 @@ const pricing = [
     originalPrice: "¥648",
     popular: true,
     features: [
+      "课程授权为一次买断",
       "Notion 内部笔记 Space Access",
       "课程全部视频 Early Access",
       "课程全部源码 Early Access",
       "学员问答精华沉淀 Early Access",
-      "课程内容审稿、投票",
-      "内测讨论和技术指导微信群",
+      "内部讨论和技术指导微信群",
     ],
     button: {
       text: "立即购买",
