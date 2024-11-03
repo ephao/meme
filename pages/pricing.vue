@@ -39,12 +39,12 @@ const pricing = [
     ],
     button: {
       text: "立即购买",
-      link: "https://s.zhaikr.com/c-payment",
+      link: "/",
     },
   },
   {
     name: "个性化辅导",
-    price: "Let's Talk",
+    price: "联系我们",
     popular: false,
     features: [
       "个性化课程定制",
@@ -54,7 +54,7 @@ const pricing = [
       "24/7 专属支持",
     ],
     button: {
-      text: "联系我们",
+      text: "Contact us",
       link: "/contact",
     },
   },
@@ -69,7 +69,20 @@ const pricing = [
     </LandingSectionhead>
 
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
-      <LandingPricing v-for="item of pricing" :plan="item" />
+      <!-- 免费版：移动端 order-2，PC端 md:order-1 -->
+      <div class="order-2 md:order-1">
+        <LandingPricing :plan="pricing[0]" />
+      </div>
+
+      <!-- 标准版：移动端 order-1，PC端 md:order-2 -->
+      <div class="order-1 md:order-2">
+        <LandingPricing :plan="pricing[1]" />
+      </div>
+
+      <!-- 个性化辅导：移动端和PC端都是最后 order-3 -->
+      <div class="order-3">
+        <LandingPricing :plan="pricing[2]" />
+      </div>
     </div>
   </LandingContainer>
 </template>
