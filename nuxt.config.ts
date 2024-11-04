@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["nuxt-icon", "@nuxt/ui", "@nuxt/content"],
+  modules: ["nuxt-icon", "@nuxt/ui", "@nuxt/content", "@nuxt/image"],
   app: {
     head: {
       title: "Web 开发从入门到上线",

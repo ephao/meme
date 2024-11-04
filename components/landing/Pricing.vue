@@ -84,8 +84,11 @@ defineProps(["plan"]);
       <div class="flex mt-8">
         <LandingLink
           :href="plan.button.link || '#'"
-          block
+          size="lg"
+          :block="true"
           :styleName="plan.popular ? 'primary' : 'outline'"
+          target="_blank"
+          rel="noopener"
         >
           {{ plan.button.text }}
         </LandingLink>
