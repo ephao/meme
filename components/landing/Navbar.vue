@@ -46,7 +46,7 @@ const open = ref(false);
         <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: open, hidden: !open }">
           <ul class="flex flex-col lg:flex-row lg:gap-3">
             <li v-for="item of menuitems">
-              <NuxtLink :to="item.path" class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-primary-600 after:scale-x-0 after:transition-transform"
+              <NuxtLink :to="item.path" class="flex lg:px-3 py-2 text-slate-500 hover:text-gray-500 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-primary-600 after:scale-x-0 after:transition-transform"
                 :class="{ 'font-medium text-primary-600 after:scale-x-100': $route.path === item.path }">
                 {{ item.title }}
               </NuxtLink>
@@ -54,14 +54,14 @@ const open = ref(false);
           </ul>
           <div class="lg:hidden flex items-center mt-3 gap-4">
             <LandingLink href="https://indie-startups.notion.site/" styleName="muted" block size="md" target="_blank"
-              rel="noopener" class="hover:text-gray-900 transition-colors duration-300">课程简介</LandingLink>
+              rel="noopener" class="hover:text-gray-500 transition-colors duration-300">课程简介</LandingLink>
             <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11" size="md" block target="_blank" rel="noopener" class="transition-colors duration-300">立即加入
             </LandingLink>
           </div>
         </nav>
         <div>
           <div class="hidden lg:flex items-center gap-4">
-            <NuxtLink to="https://indie-startups.notion.site/" target="_blank" rel="noopener" class="hover:text-gray-900 transition-colors duration-300">课程简介</NuxtLink>
+            <NuxtLink to="https://indie-startups.notion.site/" target="_blank" rel="noopener" class="hover:text-gray-500 transition-colors duration-300">课程简介</NuxtLink>
             <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11" size="md" target="_blank" rel="noopener" class="transition-colors duration-300">立即加入</LandingLink>
           </div>
         </div>
@@ -94,7 +94,7 @@ const open = ref(false);
         <nav class="w-full mt-2" :class="{ block: open, hidden: !open }">
           <ul class="flex flex-col">
             <li v-for="item of menuitems">
-              <NuxtLink :to="item.path" class="flex px-3 py-2 text-gray-600 hover:text-gray-900 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-primary-600 after:scale-x-0 after:transition-transform"
+              <NuxtLink :to="item.path" class="flex px-3 py-2 text-slate-500 hover:text-gray-500 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-primary-600 after:scale-x-0 after:transition-transform"
                 :class="{ 'font-medium text-primary-600 after:scale-x-100': $route.path === item.path }">
                 {{ item.title }}
               </NuxtLink>
@@ -102,7 +102,7 @@ const open = ref(false);
           </ul>
           <div class="flex items-center mt-3 gap-4">
             <LandingLink href="https://indie-startups.notion.site/" styleName="muted" block size="md" target="_blank"
-              rel="noopener" class="hover:text-gray-900 transition-colors duration-300">课程简介</LandingLink>
+              rel="noopener" class="hover:text-gray-500 transition-colors duration-300">课程简介</LandingLink>
             <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11" size="md" block target="_blank" rel="noopener" class="transition-colors duration-300">立即加入
             </LandingLink>
           </div>
