@@ -1,13 +1,58 @@
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const hasInteracted = ref(false);
+const shouldAutoplay = ref(false);
+const videoRef = ref(null);
+
+onMounted(() => {
+  setTimeout(() => {
+    if (!hasInteracted.value) {
+      shouldAutoplay.value = true;
+      if (videoRef.value) {
+        videoRef.value.currentTime = 0;
+        videoRef.value.play();
+      }
+    }
+  }, 3000);
+});
+
+const handleVideoEnded = () => {
+  if (!hasInteracted.value) {
+    shouldAutoplay.value = false;
+  }
+};
+</script>
+
 <template>
   <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
     <div class="p-24 md:order-1 hidden md:block relative group">
-      <div class="w-[384px] h-[384px] hover:scale-125 relative transition-transform">
-        <img class="rounded-full absolute inset-0 w-full h-full object-cover" src="/assets/img/hero.webp"
-          alt="Starship starts the engine" loading="eager" width="384" height="384" />
+      <div
+        class="w-[384px] h-[384px] hover:scale-125 relative transition-transform"
+        @mouseover="hasInteracted = true; shouldAutoplay = true; videoRef.currentTime = 0; videoRef.play()"
+        @mouseleave="hasInteracted = false"
+      >
+        <img
+          class="rounded-full absolute inset-0 w-full h-full object-cover"
+          :class="{ 'opacity-0': shouldAutoplay }"
+          src="/assets/img/hero.webp"
+          alt="Starship starts the engine"
+          loading="eager"
+          width="384"
+          height="384"
+        />
         <video
-          class="rounded-full w-[384px] h-[384px] object-cover opacity-0 group-hover:opacity-100 transition-opacity absolute inset-0"
-          src="https://pictures.zhaikr.com/The_cat_wizard_fly_pass_through_.mp4" muted loop autoplay playsinline
-          poster="/assets/img/hero.webp"></video>
+          ref="videoRef"
+          class="rounded-full w-[384px] h-[384px] object-cover absolute inset-0"
+          :class="{ 'opacity-100': shouldAutoplay, 'opacity-0': !shouldAutoplay }"
+          src="https://pictures.zhaikr.com/The_cat_wizard_fly_pass_through_.mp4"
+          muted
+          :loop="hasInteracted"
+          autoplay
+          playsinline
+          poster="/assets/img/hero.webp"
+          @ended="handleVideoEnded"
+        ></video>
       </div>
     </div>
 
