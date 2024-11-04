@@ -39,7 +39,7 @@ defineProps(["plan"]);
           <p
             :class="[
               'text-4xl font-bold md:text-4xl',
-              plan.popular ? 'text-black' : 'text-gray-700'
+              plan.popular ? 'text-slate-800 dark:text-slate-100' : 'text-slate-700 dark:text-slate-300'
             ]"
           >
             {{ plan.price }}
