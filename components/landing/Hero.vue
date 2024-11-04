@@ -75,7 +75,7 @@ const handleVideoEnded = () => {
         <LandingLink
           href="https://indie-startups.notion.site/"
           size="lg"
-          styleName="outline"
+          styleName="link"
           :block="false"
           target="_blank"
           rel="noopener"
