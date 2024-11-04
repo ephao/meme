@@ -9,7 +9,8 @@
         class="text-2xl text-slate-500 hover:text-gray-600 transition-colors duration-300">
         <Icon name="mdi:wechat" />
       </a>
-      <a title="关注我的 Web 开发课程" href="https://indie-startups.notion.site/" target="_blank" rel="noopener noreferrer"
+      <a title="立即加入课程" href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11"
+        target="_blank" rel="noopener noreferrer"
         class="text-2xl text-slate-500 hover:text-gray-600 transition-colors duration-300">
         <Icon name="mdi:school" />
       </a>
