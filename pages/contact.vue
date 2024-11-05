@@ -72,21 +72,21 @@ const contactInfo = [
 
     <div class="flex justify-center mt-8">
       <a href="https://justin-pro.notion.site/12bd90f4c8cd80b09dd8ccafb261d3dd?pvs=105" target="_blank"
-        class="bg-slate-900 hover:bg-slate-600 text-white py-2 px-4 rounded-md transition-colors duration-300">
+        class="bg-slate-900 hover:bg-slate-600 dark:bg-slate-700 dark:hover:bg-slate-600 text-white py-2 px-4 rounded-md transition-colors duration-300">
         问题咨询与反馈
       </a>
     </div>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
       <div v-for="info in contactInfo" :key="info.title"
-        class="border-2 border-slate-200 py-5 px-6 rounded-md transition-all duration-300">
-        <h3 class="font-medium text-xl text-gray-800">
+        class="border-2 border-slate-200 dark:border-slate-700 py-5 px-6 rounded-md transition-all duration-300">
+        <h3 class="font-medium text-xl text-gray-800 dark:text-gray-200">
           {{ info.title }}
         </h3>
-        <div v-for="item in info.items" :key="item.text" class="flex items-center mt-2 space-x-2 text-gray-600">
+        <div v-for="item in info.items" :key="item.text" class="flex items-center mt-2 space-x-2 text-gray-600 dark:text-gray-400">
           <!-- <Icon :class="['text-gray-400 w-4 h-4']" :name="item.icon" /> -->
           <span v-if="!item.link">{{ item.emoji }} {{ item.text }}</span>
-          <a v-else :href="item.link" target="_blank">{{ item.emoji }} {{ item.text }}</a>
+          <a v-else :href="item.link" target="_blank" class="hover:text-gray-900 dark:hover:text-gray-200">{{ item.emoji }} {{ item.text }}</a>
         </div>
       </div>
     </div>
