@@ -2,13 +2,16 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  modules: ["nuxt-icon", "@nuxt/ui", "@nuxt/content", "@nuxt/image"],
+
+  modules: ["nuxt-icon", "@nuxt/ui", "@nuxt/content", "@nuxt/image", "@nuxtjs/color-mode"],
+
   app: {
     head: {
       title: "Web 开发从入门到上线",
@@ -47,9 +50,16 @@ export default defineNuxtConfig({
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-      script: [
-        { src: "/tracking.js" }
-      ]
+      script: [{ src: "/tracking.js" }],
     },
+  },
+
+  compatibilityDate: "2024-11-05",
+
+  colorMode: {
+    classSuffix: '',
+    fallback: 'light', // 默认颜色模式
+    preference: 'system', // 优先使用系统颜色模式
+    dataValue: 'theme',
   },
 });
