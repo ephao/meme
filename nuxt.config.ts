@@ -55,4 +55,11 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: "2024-11-05",
+
+  colorMode: {
+    classSuffix: '',
+    fallback: 'light', // 默认颜色模式
+    preference: 'system', // 优先使用系统颜色模式
+    dataValue: 'theme',
+  },
 });

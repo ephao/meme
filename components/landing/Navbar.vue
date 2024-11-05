@@ -19,6 +19,19 @@ const menuitems = [
 ];
 
 const open = ref(false);
+const colorMode = useColorMode()
+
+const toggleColorMode = () => {
+  if (colorMode.preference === 'system') {
+    colorMode.preference = colorMode.value === 'dark' ? 'dark' : 'light'
+  } else {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  }
+}
+
+const isDarkMode = computed(() => {
+  return colorMode.value === 'dark'
+})
 </script>
 
 <template>
@@ -66,6 +79,10 @@ const open = ref(false);
         </nav>
         <div>
           <div class="hidden lg:flex items-center gap-4">
+            <button @click="toggleColorMode"
+              class="pt-1.5 text-gray-500 dark:text-slate-600 hover:text-gray-700 dark:hover:text-gray-400">
+              <Icon name="ph:lightbulb-filament-bold" class="h-5 w-5" />
+            </button>
             <NuxtLink to="https://indie-startups.notion.site/" target="_blank" rel="noopener"
               class="hover:text-gray-500 dark:hover:text-gray-300 transition-colors duration-300">课程简介</NuxtLink>
             <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11" size="md"
@@ -86,8 +103,12 @@ const open = ref(false);
             <span class="font-bold text-slate-800 dark:text-slate-100">Justin</span><span
               class="text-slate-500 dark:text-slate-400">Course</span>
           </NuxtLink>
-          <div class="block">
-            <button @click="open = !open" class="text-gray-800">
+          <div class="flex items-center">
+            <button @click="toggleColorMode"
+              class="mr-4 pt-1.5 text-gray-500 dark:text-slate-600 hover:text-gray-700 dark:hover:text-gray-200">
+              <Icon name="ph:lightbulb-filament-bold" class="h-5 w-5" />
+            </button>
+            <button @click="open = !open" class="text-gray-800 dark:text-gray-200">
               <svg fill="currentColor" class="w-4 h-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <title>Menu</title>
                 <path v-show="open" fill-rule="evenodd" clip-rule="evenodd"
