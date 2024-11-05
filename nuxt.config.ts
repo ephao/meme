@@ -1,3 +1,4 @@
+import { defineNuxtConfig } from 'nuxt/config'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -10,7 +11,14 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["nuxt-icon", "@nuxt/ui", "@nuxt/content", "@nuxt/image", "@nuxtjs/color-mode"],
+  modules: [
+    "nuxt-icon",
+    "@nuxt/ui",
+    "@nuxt/content",
+    "@nuxt/image",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/sitemap",
+  ],
 
   app: {
     head: {
@@ -56,10 +64,49 @@ export default defineNuxtConfig({
 
   compatibilityDate: "2024-11-05",
 
+  site: {
+    url: "https://justincourse.com",
+    name: "Web 开发从入门到上线",
+    description:
+      "从零开始学习 Web 开发，掌握前端技术栈，完成项目从开发到上线的全过程",
+    defaultLocale: "zh",
+    identity: {
+      type: "Organization",
+      name: "JustinCourse",
+      logo: "https://justincourse.com/og-image-0.jpg",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@interjc",
+      creator: "@interjc",
+    },
+    trailingSlash: true,
+    indexable: true,
+    robots: {
+      index: true,
+      follow: true,
+    },
+    sitemap: {
+      urls: [],
+      excludeUrls: ["/admin", "/private"],
+      hostname: "https://justincourse.com",
+      gzip: true,
+      xsl: true,
+      lastmod: new Date().toISOString(),
+      changefreq: "weekly",
+      priority: 1.0,
+      defaults: {
+        changefreq: "daily",
+        priority: 0.8,
+        lastmod: new Date().toISOString(),
+      },
+    },
+  },
+
   colorMode: {
-    classSuffix: '',
-    fallback: 'light', // 默认颜色模式
-    preference: 'system', // 优先使用系统颜色模式
-    dataValue: 'theme',
+    classSuffix: "",
+    fallback: "light", // 默认颜色模式
+    preference: "system", // 优先使用系统颜色模式
+    dataValue: "theme",
   },
 });
