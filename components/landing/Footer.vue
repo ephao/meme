@@ -14,6 +14,10 @@
         class="text-2xl text-slate-500 hover:text-gray-600 transition-colors duration-300">
         <Icon name="mdi:school" />
       </a>
+      <a title="富途海外独立品牌moomoo证券" href="https://start.moomoo.com/01yvCv" target="_blank" rel="noopener noreferrer"
+        class="text-2xl text-slate-500 hover:text-gray-600 transition-colors duration-300">
+        <Icon name="mdi:finance" />
+      </a>
     </div>
     <p class="text-center text-sm text-slate-500">
       Copyright © {{ new Date().getFullYear() }} <a target="_blank" href="https://x.com/interjc">Justin</a>
