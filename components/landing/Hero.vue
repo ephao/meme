@@ -50,7 +50,7 @@ const handleVideoEnded = () => {
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11" size="lg"
           styleName="primary" :block="false" target="_blank" rel="noopener">立即加入</LandingLink>
-        <LandingLink href="https://app.justincourse.com/web-course-phrase-1/" size="lg" styleName="link" :block="false"
+        <LandingLink href="https://s.zhaikr.com/web-course-1" size="lg" styleName="link" :block="false"
           target="_blank" rel="noopener">进入课程</LandingLink>
       </div>
     </div>
