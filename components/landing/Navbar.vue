@@ -13,6 +13,10 @@ const menuitems = [
     path: "/about",
   },
   {
+    title: "问答 FAQ",
+    path: "/faq",
+  },
+  {
     title: "联系 Contact",
     path: "/contact",
   },

@@ -2,7 +2,7 @@
 title: "视频课程的学习进度和课后练习"
 summary: "视频课程根据自己的学习进度来完成，每周三节课，每节课约40分钟。"
 url: /faq/video-course-progress
-image: /images/faq/course-progress.jpg
+image: /images/content/highway-821487_1920.jpg
 category: "课程信息"
 tags:
   - "视频课程"

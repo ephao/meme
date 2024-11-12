@@ -2,7 +2,7 @@
 title: "年长者是否可以学习"
 summary: "年长者也可以学会，热情和耐心是关键。"
 url: /faq/senior-learning
-image: /images/faq/senior-learning.jpg
+image: /images/content/courier-1214227_1920.jpg
 category: "入门指南"
 tags:
   - "年长者"

@@ -2,7 +2,7 @@
 title: "科技上网资源的需求"
 summary: "课程视频和 AI 应用需科技上网，确认网络是否正常后即可学习。"
 url: /faq/network-requirements
-image: /images/faq/network-access.jpg
+image: /images/content/cat-3861290_1920.jpg
 category: "课程信息"
 tags:
   - "科技上网"

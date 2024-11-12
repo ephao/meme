@@ -2,7 +2,7 @@
 title: "上课形式"
 summary: "课程通过 Notion 笔记、在线视频及社群支持进行学习。"
 url: /faq/course-format
-image: /images/faq/learning-format.jpg
+image: /images/content/3d-printing-3758154_1920.jpg
 category: "课程信息"
 tags:
   - "上课形式"
