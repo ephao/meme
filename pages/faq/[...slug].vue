@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto">
+  <div class="max-w-4xl mx-auto pt-8">
     <ContentDoc v-slot="{ doc }">
       <article class="prose dark:prose-invert max-w-none">
         <h1>{{ doc.title }}</h1>
@@ -10,14 +10,14 @@
           class="w-full h-64 object-cover rounded-lg mb-8"
         />
         <div class="mb-8">
-          <span class="text-sm text-gray-500">{{ doc.category }}</span>
-          <div class="flex gap-2 mt-2">
+          <span class="text-sm rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-600 dark:text-sky-300 dark:border-sky-500/15 dark:bg-sky-500/10">{{ doc.category }}</span>
+          <div class="flex flex-wrap gap-2 mt-2">
             <span
               v-for="tag in doc.tags"
               :key="tag"
-              class="px-2 py-1 text-sm bg-gray-100 dark:bg-gray-700 rounded"
+              class="text-sm rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-600 dark:text-sky-300 dark:border-sky-500/15 dark:bg-sky-500/10 hover:bg-sky-100 dark:hover:bg-sky-500/20 transition-colors duration-200"
             >
-              {{ tag }}
+              #{{ tag }}
             </span>
           </div>
         </div>
