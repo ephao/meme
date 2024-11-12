@@ -8,7 +8,7 @@
         </div>
         <div class="flex justify-center">
           <nav aria-label="Breadcrumb">
-            <UBreadcrumb :links="breadcrumbLinks(doc?.title ?? '')" divider="chevron"
+            <UBreadcrumb :links="breadcrumbLinks(doc?.title ?? '')" divider="i-heroicons-chevron-right"
               class="text-sm text-gray-500 dark:text-gray-400 mb-8" />
           </nav>
         </div>
