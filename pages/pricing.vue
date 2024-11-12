@@ -62,7 +62,7 @@ const pricing = [
 </script>
 
 <template>
-  <LandingContainer>
+  <div class="pricing-page">
     <LandingSectionhead>
       <template v-slot:title>课程价格</template>
       <template v-slot:desc>原价只是游戏里氪一单的价格，竟然还要打折</template>
@@ -84,5 +84,5 @@ const pricing = [
         <LandingPricing :plan="pricing[2]" />
       </div>
     </div>
-  </LandingContainer>
+  </div>
 </template>

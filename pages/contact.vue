@@ -62,7 +62,7 @@ const contactInfo = [
 </script>
 
 <template>
-  <LandingContainer>
+  <div class="contact-page">
     <LandingSectionhead>
       <template v-slot:title>联系方式</template>
       <template v-slot:desc>
@@ -90,5 +90,5 @@ const contactInfo = [
         </div>
       </div>
     </div>
-  </LandingContainer>
+  </div>
 </template>

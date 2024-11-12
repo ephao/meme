@@ -5,7 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <LandingContainer>
+  <div class="about-page">
     <LandingSectionhead>
       <template v-slot:title>关于课程、关于我</template>
       <template v-slot:desc>我是真的想要教会你做项目</template>
@@ -54,5 +54,5 @@ definePageMeta({
         </ul>
       </div>
     </div>
-  </LandingContainer>
+  </div>
 </template>
