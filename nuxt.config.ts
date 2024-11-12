@@ -109,4 +109,16 @@ export default defineNuxtConfig({
     preference: "system", // 优先使用系统颜色模式
     dataValue: "theme",
   },
+
+  content: {
+    highlight: {
+      theme: 'github-dark'
+    },
+    markdown: {
+      toc: {
+        depth: 3,
+        searchDepth: 3
+      }
+    }
+  }
 });
