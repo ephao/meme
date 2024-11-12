@@ -41,7 +41,7 @@ const isDarkMode = computed(() => {
 <template>
   <div
     class="sticky top-0 z-50 hidden lg:block bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-slate-50 dark:border-slate-800">
-    <LandingContainer>
+    <CommonContainer>
       <header class="flex flex-col lg:flex-row justify-between items-center py-2">
         <div class="flex w-full lg:w-auto items-center justify-between">
           <NuxtLink to="/" class="text-lg">
@@ -95,12 +95,12 @@ const isDarkMode = computed(() => {
           </div>
         </div>
       </header>
-    </LandingContainer>
+    </CommonContainer>
   </div>
 
   <!-- Mobile navbar -->
   <div class="lg:hidden">
-    <LandingContainer>
+    <CommonContainer>
       <header class="flex flex-col justify-between items-center my-3 pt-2">
         <div class="flex w-full items-center justify-between">
           <NuxtLink to="/" class="text-lg">
@@ -146,6 +146,6 @@ const isDarkMode = computed(() => {
           </div>
         </nav>
       </header>
-    </LandingContainer>
+    </CommonContainer>
   </div>
 </template>

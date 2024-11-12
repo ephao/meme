@@ -1,5 +1,10 @@
 <template>
   <div class="max-w-4xl mx-auto pt-8">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">常见问题</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400">这里收集了大家经常遇到的问题和解答，希望能帮助到您</p>
+    </div>
+
     <ContentList path="/faq" v-slot="{ list }">
       <div class="grid gap-6">
         <div v-for="item in list" :key="item._path" class="flex flex-col bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
@@ -17,15 +22,14 @@
                 <span class="text-sm rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-600 dark:text-sky-300 dark:border-sky-500/15 dark:bg-sky-500/10">
                   {{ item.category }}
                 </span>
-                <h2 class="text-xl font-bold">{{ item.title }}</h2>
+                <NuxtLink :to="item.url" class="text-xl font-bold hover:text-sky-600 dark:hover:text-sky-400">
+                  {{ item.title }}
+                </NuxtLink>
               </div>
 
-              <div class="line-clamp-2 mb-4">
-                <ContentRenderer
-                  :value="item"
-                  class="prose dark:prose-invert max-w-none"
-                />
-              </div>
+              <p class="text-gray-600 dark:text-gray-400 line-clamp-2 min-h-[3rem] mb-4">
+                {{ item.summary }}
+              </p>
 
               <div class="flex justify-between items-end">
                 <div class="flex flex-wrap gap-2">

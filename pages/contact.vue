@@ -70,11 +70,15 @@ const contactInfo = [
       </template>
     </LandingSectionhead>
 
-    <div class="flex justify-center mt-8">
+    <div class="flex justify-center gap-4 mt-8">
       <a href="https://justin-pro.notion.site/12bd90f4c8cd80b09dd8ccafb261d3dd?pvs=105" target="_blank"
-        class="bg-slate-900 hover:bg-slate-600 dark:bg-slate-700 dark:hover:bg-slate-600 text-white py-2 px-4 rounded-md transition-colors duration-300">
+        class="border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 py-2 px-4 rounded-md transition-colors duration-300">
         问题咨询与反馈
       </a>
+      <NuxtLink to="/faq"
+        class="border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 py-2 px-4 rounded-md transition-colors duration-300">
+        常见问答
+      </NuxtLink>
     </div>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
