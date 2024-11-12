@@ -1,6 +1,6 @@
 ---
 title: "零基础是否可以学习以及学习周期"
-summary: "零基础学员也可以开始，前10课学习后即可利用 AI 建立简单网站。"
+summary: "零基础可学，学完前10课即可用AI搭建简单网站"
 url: /faq/zero-based-learning
 image: /images/content/alex-block-PdDBTrkGYLo-unsplash.jpg
 category: "入门指南"

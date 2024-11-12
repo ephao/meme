@@ -1,6 +1,6 @@
 ---
 title: "课程费用及支付方式"
-summary: "当前课程费用为259.2元，可通过微信或支付宝支付。"
+summary: "课程费用259.2元，支持微信和支付宝支付"
 url: /faq/course-payment
 image: /images/content/start-2465624_1920.jpg
 category: "课程信息"

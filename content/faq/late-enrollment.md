@@ -1,6 +1,6 @@
 ---
 title: "是否可在已开课后加入学习"
-summary: "课程为录播形式，随时可从任意进度开始学习。"
+summary: "课程为录播形式，可随时加入学习"
 url: /faq/late-enrollment
 image: /images/content/lego-516559_1920.jpg
 category: "课程信息"
