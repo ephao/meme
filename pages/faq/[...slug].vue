@@ -23,7 +23,7 @@
         </div>
         <div class="px-4 bg-white/90 dark:bg-gray-900/90 rounded-lg border border-sky-100 dark:border-sky-500/30 mb-8 shadow-sm">
           <p class="text-gray-800 dark:text-gray-200">
-            <span class="font-medium text-sky-600 dark:text-sky-400">A: </span>{{ doc.description }}
+            <span class="font-medium text-sky-600 dark:text-sky-400">A: </span>{{ doc.summary }}
           </p>
         </div>
         <ContentRenderer :value="doc" />
