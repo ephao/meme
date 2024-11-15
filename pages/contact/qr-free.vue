@@ -17,7 +17,7 @@ definePageMeta({
 
     <div class="flex justify-center">
       <div class="mt-8">
-        <img src="/images/qr-wechat-group-free.jpg" alt="微信群二维码" class="h-64" />
+        <img src="/images/qr-wechat-group-free.jpg" alt="微信群二维码" class="h-96" />
       </div>
     </div>
   </div>
