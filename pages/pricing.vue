@@ -24,7 +24,7 @@ const pricing = [
       },
     ],
     button: {
-      text: "扫码加入微信群",
+      text: "免费微信群",
       link: "/contact/qr-free",
     },
   },
