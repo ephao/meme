@@ -9,7 +9,7 @@ const pricing = [
     price: "免费",
     popular: false,
     features: [
-      "基于 Youtube 等平台的课程视频",
+      "公开平台的课程视频",
       "基于 GitHub 的课程源码",
       "基于 X 的动态更新",
       "学员问答精华沉淀",
@@ -18,10 +18,14 @@ const pricing = [
         text: "基于 Notion 的公开笔记",
         link: "https://s.zhaikr.com/c-learn-resources"
       },
+      {
+        text: "免费 TG 群",
+        link: "https://s.zhaikr.com/c-telegram"
+      },
     ],
     button: {
-      text: "加入 TG 群",
-      link: "https://s.zhaikr.com/c-telegram",
+      text: "扫码加入微信群",
+      link: "/contact/qr-free",
     },
   },
   {
@@ -31,7 +35,7 @@ const pricing = [
     popular: true,
     features: [
       "课程授权为一次买断",
-      "Notion 内部笔记 Space Access",
+      "课程内部笔记 Space Access",
       "课程全部视频 Early Access",
       "课程全部源码 Early Access",
       "学员问答精华沉淀 Early Access",
