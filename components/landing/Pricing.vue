@@ -33,7 +33,8 @@ defineProps(["plan"]);
               'text-4xl font-bold md:text-4xl relative',
               plan.popular ? 'text-slate-800 dark:text-slate-100' : 'text-slate-700 dark:text-slate-300'
             ]">
-            {{ plan.price }}<sup v-if="plan.popular" class="text-sm text-blue-600 relative top-[-1em] left-[0.1em]">*</sup>
+            {{ plan.price }}<sup v-if="plan.popular"
+              class="text-sm text-blue-600 relative top-[-1em] left-[0.1em]">*</sup>
           </p>
           <p v-if="plan.originalPrice" class="mt-1 text-xl font-medium text-gray-400 line-through">
             {{ plan.originalPrice }}
@@ -65,9 +66,16 @@ defineProps(["plan"]);
           :styleName="plan.popular ? 'primary' : 'outline'" target="_blank" rel="noopener">
           {{ plan.button.text }}
         </LandingLink>
-        <p v-if="plan.popular" class="mt-2 text-xs text-center text-slate-500 dark:text-slate-500">
-          <small>* 在不同国家/地区将根据当地汇率及税率计算价格</small>
-        </p>
+        <div v-if="plan.popular" class="mt-2 text-xs text-center text-slate-500 dark:text-slate-500">
+          <p>
+            <small>* 在不同国家/地区将根据当地汇率及税率计算价格</small>
+          </p>
+          <p class="mt-1">
+            <NuxtLink to="/pricing/promo" class="text-blue-600 hover:text-blue-800 hover:underline ml-1">
+              🎊 查看优惠活动 🎁
+            </NuxtLink>
+          </p>
+        </div>
       </div>
     </div>
   </div>
