@@ -58,7 +58,20 @@ export default defineNuxtConfig({
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-      script: [{ src: "/tracking.js" }],
+      script: [
+        { src: "/tracking.js" },
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=AW-16781608122",
+          async: true
+        },
+        {
+          children: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-16781608122');`,
+          type: 'text/javascript'
+        }
+      ],
     },
   },
 
