@@ -70,6 +70,15 @@ export default defineNuxtConfig({
           gtag('js', new Date());
           gtag('config', 'AW-16781608122');`,
           type: 'text/javascript'
+        },
+        {
+          src: "//cdn.trackdesk.com/tracking.js",
+          async: true
+        },
+        {
+          children: `(function(t,d,k){(t[k]=t[k]||[]).push(d);t[d]=t[d]||t[k].f||function(){(t[d].q=t[d].q||[]).push(arguments)}})(window,"trackdesk","TrackdeskObject");
+          trackdesk('yoko', 'click');`,
+          type: 'text/javascript'
         }
       ],
     },
