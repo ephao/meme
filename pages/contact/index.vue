@@ -85,6 +85,10 @@ const contactInfo = [
         class="border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 py-2 px-4 rounded-md transition-colors duration-300">
         常见问答
       </NuxtLink>
+      <a href="https://s.zhaikr.com/c-aff" target="_blank"
+        class="border border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 py-2 px-4 rounded-md transition-colors duration-300">
+        推荐计划
+      </a>
     </div>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
@@ -93,10 +97,12 @@ const contactInfo = [
         <h3 class="font-medium text-xl text-gray-800 dark:text-gray-200">
           {{ info.title }}
         </h3>
-        <div v-for="item in info.items" :key="item.text" class="flex items-center mt-2 space-x-2 text-gray-600 dark:text-gray-400">
+        <div v-for="item in info.items" :key="item.text"
+          class="flex items-center mt-2 space-x-2 text-gray-600 dark:text-gray-400">
           <!-- <Icon :class="['text-gray-400 w-4 h-4']" :name="item.icon" /> -->
           <span v-if="!item.link">{{ item.emoji }} {{ item.text }}</span>
-          <a v-else :href="item.link" target="_blank" class="hover:text-gray-900 dark:hover:text-gray-200">{{ item.emoji }} {{ item.text }}</a>
+          <a v-else :href="item.link" target="_blank" class="hover:text-gray-900 dark:hover:text-gray-200">{{ item.emoji
+            }} {{ item.text }}</a>
         </div>
       </div>
     </div>
