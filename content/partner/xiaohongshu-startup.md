@@ -22,5 +22,3 @@ ref: https://xiaobot.net/p/course?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c005
 🎁你将获得:
 - 从0起步所需的基础知识、步骤
 - 搭建一个可以互相交流的小圈子
-
-[了解更多](https://xiaobot.net/p/course?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c005)

@@ -19,5 +19,3 @@ Rewardful是一个专业的国际化佣金平台，提供：
 - 实时数据统计
 - 便捷的推广链接管理
 - API集成支持
-
-[了解更多](https://www.rewardful.com/?via=justin-chen)

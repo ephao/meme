@@ -26,5 +26,3 @@ ref: https://xiaobot.net/p/xiaohongshuku?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c
 1️⃣获得做小红书的核心技能｜工作方法
 2️⃣进入小红书博主新星群，日常打卡交流
 3️⃣小红书内部运营学习资料，群内不定期掉落
-
-[了解更多](https://xiaobot.net/p/xiaohongshuku?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c005)

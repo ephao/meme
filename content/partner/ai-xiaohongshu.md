@@ -22,5 +22,3 @@ ref: https://xiaobot.net/p/KarlHeinz99?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c00
 - AI辅助小红书创作
 - AI小红书变现案例
 - AI文字表达优化
-
-[了解更多](https://xiaobot.net/p/KarlHeinz99?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c005)

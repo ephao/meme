@@ -20,5 +20,3 @@ ref: https://xiaobot.net/p/xhs?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c005
 这里为你精选了220个小红书可复制案例（全网独一份），帮你快速找到适合自己的成功路径。
 
 快速刷一遍案例，找到你能模仿的，对标、死磕执行、快速出结果。玩流量，玩IP，首选小红书。低门槛，低成本，反馈快。
-
-[了解更多](https://xiaobot.net/p/xhs?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c005)

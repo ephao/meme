@@ -19,5 +19,3 @@ Wise (前身为 TransferWise) 提供:
 - 优惠的跨境汇率
 - 快速的国际转账服务
 - 实时汇率更新
-
-[了解更多](https://wise.com/invite/ihpc/justinc1484)
