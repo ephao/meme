@@ -1,12 +1,11 @@
 ---
 title: "上课形式"
-summary: "课程通过 Notion 笔记和在线视频进行，每周三节课，每节40分钟"
+summary: "课程通过图文笔记和在线录播视频进行，每周三节课，每节30-40分钟"
 url: /faq/course-format
 image: /images/content/3d-printing-3758154_1920.jpg
 category: "课程信息"
 tags:
   - "上课形式"
-  - "Notion"
   - "在线视频"
   - "社群支持"
 description: "详细介绍课程的教学方式、学习资源和社群支持等信息。"

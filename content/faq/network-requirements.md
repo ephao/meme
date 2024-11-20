@@ -1,5 +1,5 @@
 ---
-title: "科技上网资源的需求"
+title: "上网条件的需求"
 summary: "课程视频和AI工具需科技上网"
 url: /faq/network-requirements
 image: /images/content/cat-3861290_1920.jpg
