@@ -2,7 +2,7 @@
 title: Moomoo
 summary: 富途海外独立品牌证券服务
 url: /partner/moomoo
-image: /images/partner/example.jpg
+image: /images/partner/moomoo.png
 tags:
   - 金融
   - 证券

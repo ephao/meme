@@ -2,7 +2,7 @@
 title: 小红书冷启动SOP
 summary: 从0开始的小红书账号运营指南
 url: /partner/xiaohongshu-startup
-image: /images/partner/example.jpg
+image: /images/partner/xhs-startup.png
 tags:
   - 小红书
   - 运营

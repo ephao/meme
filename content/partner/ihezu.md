@@ -2,7 +2,7 @@
 title: 奈飞小铺
 summary: 流媒体平台会员合租服务
 url: /partner/ihezu
-image: /images/partner/example.jpg
+image: /images/partner/ihezu.png
 tags:
   - 娱乐
   - 流媒体

@@ -2,7 +2,7 @@
 title: 请咖啡
 summary: 支持创作者的打赏平台
 url: /partner/buymeacoffee
-image: /images/partner/example.jpg
+image: /images/partner/buyme.png
 tags:
   - 打赏
   - 支持

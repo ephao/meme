@@ -2,7 +2,7 @@
 title: Rewardful
 summary: 专业的国际化佣金平台
 url: /partner/rewardful
-image: /images/partner/example.jpg
+image: /images/partner/reward.png
 tags:
   - 工具
   - 佣金

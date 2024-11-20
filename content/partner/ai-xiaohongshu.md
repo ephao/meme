@@ -2,7 +2,7 @@
 title: AI 小红书爆款变现
 summary: AI辅助小红书创作与变现指南
 url: /partner/ai-xiaohongshu
-image: /images/partner/example.jpg
+image: /images/partner/ai-xiao.png
 tags:
   - AI
   - 小红书

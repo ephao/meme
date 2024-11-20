@@ -2,7 +2,7 @@
 title: Fiverr
 summary: 全球领先的自由职业在线平台
 url: /partner/fiverr
-image: /images/partner/example.jpg
+image: /images/partner/fiverr.png
 tags:
   - 工具
   - 自由职业

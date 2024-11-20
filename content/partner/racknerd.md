@@ -2,7 +2,7 @@
 title: Racknerd
 summary: 优质的虚拟主机和VPS服务提供商
 url: /partner/racknerd
-image: /images/partner/example.jpg
+image: /images/partner/rack.png
 tags:
   - 主机
   - VPS

@@ -2,7 +2,7 @@
 title: 小红书可复制案例库
 summary: 220个小红书可复制案例，帮你快速找到成功路径
 url: /partner/xiaohongshu-cases
-image: /images/partner/example.jpg
+image: /images/partner/xhs-case.png
 tags:
   - 小红书
   - 案例

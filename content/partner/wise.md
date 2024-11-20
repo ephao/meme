@@ -2,7 +2,7 @@
 title: Wise
 summary: 便捷的海外储蓄卡服务
 url: /partner/wise
-image: /images/partner/example.jpg
+image: /images/partner/wise.png
 tags:
   - 金融
   - 储蓄卡

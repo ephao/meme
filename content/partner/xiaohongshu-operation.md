@@ -2,7 +2,7 @@
 title: 小红书运营手册｜全本连载中
 summary: 做号是这个时代成本最低的创业，小红书是今年最适合开辟的平台
 url: /partner/xiaohongshu-operation
-image: /images/partner/example.jpg
+image: /images/partner/xhs-oper.png
 tags:
   - 小红书
   - 运营

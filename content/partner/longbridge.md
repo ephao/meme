@@ -2,7 +2,7 @@
 title: 长桥证券
 summary: 港美股终生免佣的香港持牌券商
 url: /partner/longbridge
-image: /images/partner/example.jpg
+image: /images/partner/long.png
 tags:
   - 金融
   - 证券
