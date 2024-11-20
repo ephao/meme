@@ -10,5 +10,6 @@ definePageMeta({
     <LandingFeatures />
     <LandingLogos />
     <LandingCta />
+    <LandingPartner />
   </div>
 </template>
