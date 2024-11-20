@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const { data: partners } = await useAsyncData('partners', () => queryContent('partner').find())
+const { data: partners } = await useAsyncData('partners', () => queryContent('partner')
+  .where({ tags: { $not: { $contains: '小报童' } } })
+  .find()
+)
 
 const carouselRef = ref()
 const autoplayInterval = ref<NodeJS.Timeout>()

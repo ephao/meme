@@ -7,6 +7,7 @@ tags:
   - AI
   - 小红书
   - 变现
+  - 小报童
 category: 技术应用
 description: 利用AI技术辅助小红书内容创作，实现快速变现的完整指南。
 ref: https://xiaobot.net/p/KarlHeinz99?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c005

@@ -7,6 +7,7 @@ tags:
   - 小红书
   - 运营
   - 入门
+  - 小报童
 category: 内容创作
 description: 为小红书新手提供完整的账号运营指南，包含基础知识和实操步骤。
 ref: https://xiaobot.net/p/course?refer=8e34cd7f-0014-4bca-bfbf-ea155de7c005
