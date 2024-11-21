@@ -52,7 +52,7 @@ onUnmounted(() => {
       <h2 class="text-2xl font-bold hover:text-sky-600 dark:hover:text-sky-400 transition-colors" title="查看更多合作伙伴">合作伙伴
       </h2>
     </NuxtLink>
-    <UCarousel ref="carouselRef" :items="partners || []" :ui="{ item: 'basis-1/3 px-0' }" class="mt-8 group relative"
+    <UCarousel ref="carouselRef" :items="partners || []" :ui="{ item: 'px-0' }" class="mt-8 group relative"
       wrap-around arrows @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
       <template #default="{ item }">
         <NuxtLink :to="item.url" class="block px-0 relative group/item">
