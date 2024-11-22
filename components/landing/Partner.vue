@@ -48,12 +48,14 @@ onUnmounted(() => {
 
 <template>
   <div class="partner-section my-16">
-    <NuxtLink to="/partner" class="text-center block">
-      <h2 class="text-2xl font-bold hover:text-sky-600 dark:hover:text-sky-400 transition-colors" title="查看更多合作伙伴">合作伙伴
-      </h2>
-    </NuxtLink>
-    <UCarousel ref="carouselRef" :items="partners || []" :ui="{ item: 'px-0' }" class="mt-8 group relative"
-      wrap-around arrows @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+    <h2 class="text-2xl font-bold hover:text-sky-600 dark:hover:text-sky-400 transition-colors text-center"
+      title="查看更多合作伙伴">
+      <NuxtLink to="/partner">
+        合作伙伴
+      </NuxtLink>
+    </h2>
+    <UCarousel ref="carouselRef" :items="partners || []" :ui="{ item: 'px-0' }" class="mt-8 group relative" wrap-around
+      arrows @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
       <template #default="{ item }">
         <NuxtLink :to="item.url" class="block px-0 relative group/item">
           <div class="relative">
