@@ -26,5 +26,8 @@
     "tailwindcss": "^3.4.14",
     "vue": "^3.4.3",
     "vue-router": "^4.4.5"
+  },
+  "dependencies": {
+    "@yeger/vue-masonry-wall": "^5.0.16"
   }
 }
