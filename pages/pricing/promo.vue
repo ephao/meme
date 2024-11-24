@@ -9,7 +9,7 @@ const promos = [
     code: "2024DB11",
     discount: "4折",
     price: "¥259.2",
-    expiry: "2024年11月30日 23:59",
+    expiry: "2024年11月30日 23:59 (UTC+9)",
     isHeadline: true,
     description: "11月内购买课程，即可免费获赠价值 ¥299 的 WordPress 主题开发课程",
     links: [
@@ -30,7 +30,7 @@ const promos = [
     code: "XMAS2024",
     discount: "5折",
     price: "¥324",
-    expiry: "2024年12月25日 23:59",
+    expiry: "2024年12月25日 23:59 (UTC+9)",
     isHeadline: false
   },
   {
@@ -38,7 +38,7 @@ const promos = [
     code: "NEWYEAR2025",
     discount: "6折",
     price: "¥388.8",
-    expiry: "2025年2月28日",
+    expiry: "2025年2月28日 23:59 (UTC+9)",
     isHeadline: false
   }
 ];
