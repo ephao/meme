@@ -75,7 +75,7 @@ const sections = [
   },
   {
     label: '新手教程 Tutorial',
-    icon: 'i-heroicons-academic-cap',
+    icon: 'i-heroicons-light-bulb',
     items: [
       {
         title: '项目起步',
@@ -102,6 +102,7 @@ const sections = [
   {
     label: '实际项目 Projects',
     icon: 'i-heroicons-computer-desktop',
+    defaultOpen: true,
     items: [
       {
         title: '课程官网迭代',
@@ -183,45 +184,54 @@ const sections = [
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto py-8 px-4">
-    <h1 class="text-3xl font-bold mb-8">课程大纲</h1>
+  <div class="intro-page">
+    <div class="mx-auto max-w-4xl">
+      <LandingSectionhead>
+        <template v-slot:title>课程简介</template>
+        <template v-slot:desc>以下课程结构是目前预想中的简要版本，课程期间会根据学员反馈做内容方向、篇幅、细节、顺序等方面的调整，以
+          <a class="text-primary-500 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 hover:underline decoration-2 underline-offset-2"
+            href="https://indie-startups.notion.site/" target="_blank" rel="noopener noreferrer">课程内部笔记中的实际 Schedule
+            和课程结构</a>
+          为准</template>
+      </LandingSectionhead>
 
-    <UAccordion :items="sections">
-      <template #item="{ item, index, open }">
-        <div>
-          <div v-if="open" class="p-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div v-for="(section, sectionIndex) in item.items" :key="sectionIndex"
-                   class="backdrop-blur-md bg-white/30 dark:bg-gray-800/30 rounded-lg shadow-lg flex flex-col">
-                <div class="p-4 flex-grow">
-                  <h3 class="text-xl font-semibold mb-3">{{ section.title }}</h3>
-                  <ul class="space-y-2">
-                    <template v-for="(content, contentIndex) in section.content" :key="contentIndex">
-                      <li v-if="typeof content === 'string'" class="ml-4 flex items-center">
-                        <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 flex-shrink-0" />
-                        <span>{{ content }}</span>
-                      </li>
-                      <li v-else class="ml-4">
-                        <div class="font-medium mb-1">{{ content.title }}</div>
-                        <ul class="ml-4 space-y-1">
-                          <li v-for="(subItem, subIndex) in content.items" :key="subIndex" class="flex items-center">
-                            <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 flex-shrink-0" />
-                            <span>{{ subItem }}</span>
-                          </li>
-                        </ul>
-                      </li>
-                    </template>
-                  </ul>
-                </div>
-                <div class="p-4 border-t border-gray-200 dark:border-gray-700">
-                  <p class="text-sm text-gray-600 dark:text-gray-400">{{ section.description }}</p>
+      <UAccordion :items="sections" class="mt-16">
+        <template #item="{ item, index, open }">
+          <div>
+            <div v-if="open" class="p-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div v-for="(section, sectionIndex) in item.items" :key="sectionIndex"
+                  class="backdrop-blur-md bg-white/30 dark:bg-gray-800/30 rounded-lg shadow-lg flex flex-col">
+                  <div class="p-4 flex-grow">
+                    <h3 class="text-xl font-semibold mb-3">{{ section.title }}</h3>
+                    <ul class="space-y-2">
+                      <template v-for="(content, contentIndex) in section.content" :key="contentIndex">
+                        <li v-if="typeof content === 'string'" class="ml-4 flex items-center">
+                          <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 flex-shrink-0" />
+                          <span>{{ content }}</span>
+                        </li>
+                        <li v-else class="ml-4">
+                          <div class="font-medium mb-1">{{ content.title }}</div>
+                          <ul class="ml-4 space-y-1">
+                            <li v-for="(subItem, subIndex) in content.items" :key="subIndex" class="flex items-center">
+                              <UIcon name="i-heroicons-check-circle" class="text-green-500 mr-2 flex-shrink-0" />
+                              <span>{{ subItem }}</span>
+                            </li>
+                          </ul>
+                        </li>
+                      </template>
+                    </ul>
+                  </div>
+                  <div class="p-4 border-t border-gray-200 dark:border-gray-700">
+                    <p class="text-sm text-gray-600 dark:text-gray-400">{{ section.description }}</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </template>
-    </UAccordion>
+        </template>
+      </UAccordion>
+    </div>
   </div>
 </template>
 
