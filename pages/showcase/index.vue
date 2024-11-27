@@ -16,25 +16,18 @@
       <template #default="{ item }">
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden mb-6">
           <div class="relative w-full aspect-square">
-            <img :src="item.image" :alt="item.title" class="w-full h-full object-cover" />
+            <NuxtLink :to="item.url">
+              <img :src="item.image" :alt="item.title" class="w-full h-full object-cover" />
+            </NuxtLink>
           </div>
 
           <div class="p-4">
-            <div class="flex items-center gap-2 mb-3">
-              <NuxtLink :to="item.url" class="text-xl font-bold hover:text-sky-600 dark:hover:text-sky-400">
-                {{ item.title }}
-              </NuxtLink>
-            </div>
-
             <p class="text-gray-600 dark:text-gray-400 line-clamp-2">
-              {{ item.summary }}
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-400 line-clamp-2 mt-2">
-              <span
-                class="text-sm rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-600 dark:text-sky-300 dark:border-sky-500/15 dark:bg-sky-500/10">
-                {{ item.category }}
-              </span>
+              <small>
+                <a :href="item.siteurl" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors underline">
+                {{ item.category }} site</a> by
+                <span class="text-sky-600 dark:text-sky-400">@{{ item.author }}</span>
+              </small>
             </p>
           </div>
         </div>
@@ -45,7 +38,7 @@
 
 <script setup lang="ts">
 definePageMeta({
-  layout: 'partner',
+  layout: 'showcase',
   ssr: false
 })
 
