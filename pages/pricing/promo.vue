@@ -5,33 +5,25 @@ definePageMeta({
 
 const promos = [
   {
-    title: "黑五特惠",
-    code: "2024DB11",
-    discount: "4折",
-    price: "¥259.2",
-    expiry: "2024年11月30日 23:59 (UTC+9)",
-    isHeadline: true,
-    description: "11月内购买课程，即可免费获赠价值 ¥299 的 WordPress 主题开发课程",
-    links: [
-      {
-        text: "人工购买",
-        url: "https://s.zhaikr.com/c-stripe-bundle",
-        primary: true
-      },
-      {
-        text: "自助购买",
-        url: "https://s.zhaikr.com/c-payment-bundle",
-        primary: false
-      }
-    ]
-  },
-  {
-    title: "圣诞活动",
+    title: "圣诞特惠",
     code: "XMAS2024",
     discount: "5折",
     price: "¥324",
     expiry: "2024年12月25日 23:59 (UTC+9)",
-    isHeadline: false
+    isHeadline: true,
+    // description: "购买课程，即可免费加入日本生活交流社群",
+    links: [
+      {
+        text: "人工购买",
+        url: "https://s.zhaikr.com/c-payment",
+        primary: true
+      },
+      {
+        text: "自助购买",
+        url: "https://s.zhaikr.com/c-payment-auto",
+        primary: false
+      }
+    ]
   },
   {
     title: "新年活动",
@@ -73,7 +65,7 @@ const promos = [
     </div>
 
     <!-- Regular Promos -->
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid md:grid-cols-1 gap-8">
       <div v-for="promo in promos.filter(p => !p.isHeadline)" :key="promo.code"
         class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border border-slate-200 dark:border-gray-600">
         <h3 class="text-2xl font-bold text-gray-700 dark:text-gray-300 mb-4">{{ promo.title }}</h3>

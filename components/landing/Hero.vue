@@ -48,7 +48,7 @@ const handleVideoEnded = () => {
         <a class="text-primary-500 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 hover:underline decoration-2 underline-offset-2" href="/intro">点此查看</a>
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11" size="lg"
+        <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=XMAS2024" size="lg"
           styleName="primary" :block="false" target="_blank" rel="noopener">立即加入</LandingLink>
         <LandingLink href="https://s.zhaikr.com/web-course-1" size="lg" styleName="link" :block="false" target="_blank"
           rel="noopener">进入课程</LandingLink>

@@ -30,7 +30,7 @@ const pricing = [
   },
   {
     name: "标准版",
-    price: "¥259.2",
+    price: "¥324",
     originalPrice: "¥648",
     popular: true,
     features: [
@@ -43,7 +43,7 @@ const pricing = [
     ],
     button: {
       text: "立即加入",
-      link: "https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11",
+      link: "https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=XMAS2024",
     },
   },
   {
