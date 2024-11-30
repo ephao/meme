@@ -8,7 +8,7 @@
     </p>
     <div class="flex mt-5">
       <LandingLink
-        href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=2024DB11"
+        href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=XMAS2024"
         size="lg"
         :block="false"
         styleName="inverted"
