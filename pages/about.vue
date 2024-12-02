@@ -6,10 +6,10 @@ definePageMeta({
 
 <template>
   <div class="about-page">
-    <LandingSectionhead>
+    <CommonSectionhead>
       <template v-slot:title>关于课程、关于我</template>
       <template v-slot:desc>我是真的想要教会你做项目</template>
-    </LandingSectionhead>
+    </CommonSectionhead>
 
     <div class="flex flex-col gap-8 mx-auto max-w-4xl mt-16">
       <div class="flex flex-col gap-3">

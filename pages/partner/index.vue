@@ -1,9 +1,9 @@
 <template>
   <div class="max-w-4xl mx-auto pt-8">
-    <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">合作伙伴</h1>
-      <p class="text-lg text-gray-600 dark:text-gray-400">我们与众多优秀的企业和组织建立了长期稳定的合作关系，共同为用户提供更好的服务</p>
-    </div>
+    <CommonSectionhead class="mb-12">
+      <template v-slot:title>合作伙伴</template>
+      <template v-slot:desc>我们与众多优秀的企业和组织建立了长期稳定的合作关系，共同为用户提供更好的服务</template>
+    </CommonSectionhead>
 
     <masonry-wall
       :items="displayedItems"
