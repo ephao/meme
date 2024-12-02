@@ -69,12 +69,12 @@ const contactInfo = [
 
 <template>
   <div class="contact-page">
-    <LandingSectionhead>
+    <CommonSectionhead>
       <template v-slot:title>联系方式</template>
       <template v-slot:desc>
         有什么想说的？我在这里为您提供帮助
       </template>
-    </LandingSectionhead>
+    </CommonSectionhead>
 
     <div class="flex justify-center gap-4 mt-8">
       <a href="https://justin-pro.notion.site/12bd90f4c8cd80b09dd8ccafb261d3dd?pvs=105" target="_blank"

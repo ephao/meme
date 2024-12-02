@@ -1,7 +1,7 @@
 <template>
-  <LandingNavbar></LandingNavbar>
+  <CommonNavbar></CommonNavbar>
   <CommonContainer>
     <slot></slot>
   </CommonContainer>
-  <LandingFooter></LandingFooter>
+  <CommonFooter></CommonFooter>
 </template>
