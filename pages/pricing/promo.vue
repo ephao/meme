@@ -15,12 +15,12 @@ const promos = [
     links: [
       {
         text: "人工购买",
-        url: "https://s.zhaikr.com/c-payment",
+        url: "https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=XMAS2024",
         primary: true
       },
       {
         text: "自助购买",
-        url: "https://s.zhaikr.com/c-payment-auto",
+        url: "https://app.justincourse.com/membership-checkout/?pmpro_level=2&pmpro_discount_code=XMAS2024",
         primary: false
       }
     ]
