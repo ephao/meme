@@ -2,44 +2,31 @@
   <div class="max-w-4xl mx-auto pt-8">
     <ContentDoc v-slot="{ doc }">
       <article class="prose dark:prose-invert max-w-none">
-        <div class="overflow-hidden">
-          <img v-if="doc.image" :src="doc.image" :alt="doc.title"
-            class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:scale-105 mb-8 mt-0" />
-        </div>
         <div class="flex justify-center">
           <nav aria-label="Breadcrumb">
             <UBreadcrumb :links="breadcrumbLinks(doc?.title ?? '')" divider="i-heroicons-chevron-right"
               class="text-sm text-gray-500 dark:text-gray-400 mb-8" />
           </nav>
         </div>
-        <div class="mb-8">
-          <div class="flex items-center justify-between">
-            <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-0">{{ doc.title }}</h1>
-            <span
-              class="text-sm rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-600 dark:text-sky-300 dark:border-sky-500/15 dark:bg-sky-500/10">{{
-              doc.category }}</span>
+        <div class="bg-gradient-to-r from-blue-700 to-[#B06AB3] font-sans mb-8 rounded-lg overflow-hidden">
+          <div class="relative h-[400px] w-full">
+            <img v-if="doc.image" :src="doc.image" :alt="doc.title"
+              class="w-full h-full mt-0 object-cover transition-transform duration-300 hover:scale-105" />
           </div>
-        </div>
-        <div class="px-4 py-4 bg-white/90 dark:bg-gray-900/90 rounded-lg border border-sky-100 dark:border-sky-500/30 mb-8 shadow-sm">
-          <div class="flex items-center justify-between">
-            <p class="text-gray-800 dark:text-gray-200 m-0">
-              <span class="font-medium text-sky-600 dark:text-sky-400"></span>{{ doc.summary }}
-            </p>
-            <a
-              :href="doc.siteurl"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center px-3 py-1.5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-slate-600 dark:hover:bg-slate-200 rounded-lg transition-colors duration-200 no-underline text-sm"
-              aria-label="Visit site"
-            >立即访问</a>
+
+          <div class="container mx-auto flex flex-col justify-center items-center text-center px-6 py-12">
+            <div class="flex items-center gap-4 mb-4">
+              <h1 class="text-white sm:text-4xl text-3xl font-bold m-0 first-letter:uppercase">{{ doc.author }}'s page</h1>
+              <span class="text-sm rounded-full bg-white/20 px-3 py-1 text-white first-letter:uppercase">{{ doc.category }}</span>
+            </div>
+            <p class="text-white/90 text-base text-center mb-8">{{ doc.summary }}</p>
+
+            <a :href="doc.siteurl" target="_blank" rel="noopener noreferrer"
+              class="bg-white text-sm text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-slate-100 transition-colors duration-200 no-underline"
+              aria-label="Visit site">
+              立即访问
+            </a>
           </div>
-        </div>
-        <ContentRenderer :value="doc" />
-        <div class="flex flex-wrap gap-2 mt-8">
-          <span v-for="tag in doc.tags" :key="tag"
-            class="text-sm rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-600 dark:text-sky-300 dark:border-sky-500/15 dark:bg-sky-500/10 hover:bg-sky-100 dark:hover:bg-sky-500/20 transition-colors duration-200">
-            #{{ tag }}
-          </span>
         </div>
       </article>
     </ContentDoc>
