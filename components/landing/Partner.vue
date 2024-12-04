@@ -14,15 +14,17 @@ const { data: partners } = await useAsyncData('partners', () => queryContent('pa
       </NuxtLink>
     </h2>
     <div class="mt-8 flex flex-wrap gap-4 justify-center">
-      <NuxtLink
+      <a
         v-for="partner in partners"
         :key="partner._id"
-        :to="partner.url"
+        :href="partner.ref"
         :title="partner.summary"
+        target="_blank"
+        rel="noopener noreferrer"
         class="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 hover:text-sky-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-sky-400 transition-colors"
       >
         {{ partner.title }}
-      </NuxtLink>
+      </a>
     </div>
   </div>
 </template>
