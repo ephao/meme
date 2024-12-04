@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://justincourse.com/og-image-0.jpg",
+          content: "https://justincourse.com/og-image-0.png",
         },
         { name: "twitter:card", content: "summary_large_image" },
         { property: "twitter:domain", content: "justincourse.com" },
@@ -54,7 +54,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "https://justincourse.com/og-image-0.jpg",
+          content: "https://justincourse.com/og-image-0.png",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
@@ -95,7 +95,7 @@ export default defineNuxtConfig({
     identity: {
       type: "Organization",
       name: "JustinCourse",
-      logo: "https://justincourse.com/og-image-0.jpg",
+      logo: "https://justincourse.com/og-image-0.png",
     },
     twitter: {
       card: "summary_large_image",
