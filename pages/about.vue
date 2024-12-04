@@ -2,6 +2,8 @@
 definePageMeta({
   layout: "landing",
 });
+
+usePageTitle('关于课程、关于我', '了解课程内容、学习方法和讲师背景，我们致力于帮助你掌握 Web 开发技能');
 </script>
 
 <template>

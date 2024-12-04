@@ -2,6 +2,8 @@
 definePageMeta({
   layout: "landing",
 });
+
+usePageTitle('免费咨询', '扫描二维码加入免费微信群，获取课程咨询和技术交流机会');
 </script>
 
 <template>

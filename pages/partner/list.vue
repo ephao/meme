@@ -57,4 +57,6 @@
 definePageMeta({
   layout: 'partner'
 })
+
+usePageTitle('合作伙伴列表', '浏览我们所有的合作伙伴列表，了解他们的业务领域和合作方式');
 </script>

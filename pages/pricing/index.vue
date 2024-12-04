@@ -3,6 +3,8 @@ definePageMeta({
   layout: "landing",
 });
 
+usePageTitle('课程价格', '查看课程的详细定价方案，提供免费版、标准版和个性化辅导三种选择，满足不同学习需求');
+
 const pricing = [
   {
     name: "免费版",

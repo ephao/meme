@@ -42,6 +42,8 @@ definePageMeta({
   ssr: false
 })
 
+usePageTitle('学员作品展示', '展示我们优秀学员的项目作品和实践成果，见证学习效果和技能提升');
+
 const itemsPerPage = 6
 const displayedItems = ref<any[]>([])
 const listData = ref<any[]>([])

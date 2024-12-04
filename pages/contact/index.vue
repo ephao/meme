@@ -3,6 +3,8 @@ definePageMeta({
   layout: "landing",
 });
 
+usePageTitle('联系我们', '获取课程咨询和技术支持的各种联系方式，包括微信、QQ、Telegram等多个渠道');
+
 const contactInfo = [
   {
     title: "私信渠道",

@@ -49,6 +49,8 @@ definePageMeta({
   ssr: false
 })
 
+usePageTitle('合作伙伴', '展示我们的合作伙伴和他们的成功案例，了解如何通过合作实现共赢');
+
 const itemsPerPage = 6
 const displayedItems = ref<any[]>([])
 const listData = ref<any[]>([])

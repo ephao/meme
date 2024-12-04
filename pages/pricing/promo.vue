@@ -3,6 +3,8 @@ definePageMeta({
   layout: "landing",
 });
 
+usePageTitle('限时优惠', '限时优惠活动页面，展示当前可用的优惠码和折扣信息，把握机会享受优惠价格');
+
 const promos = [
   {
     title: "圣诞特惠",

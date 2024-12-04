@@ -54,4 +54,7 @@ const breadcrumbLinks = (currentTitle: string) => [
     icon: 'i-heroicons-document-text'
   }
 ]
+
+const { data: doc } = await useAsyncData('doc', () => queryContent().where({ _path: useRoute().path }).findOne())
+usePageTitle(doc.value?.title, doc.value?.summary);
 </script>

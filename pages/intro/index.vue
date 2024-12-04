@@ -3,6 +3,8 @@ definePageMeta({
   layout: 'intro'
 })
 
+usePageTitle('课程介绍', '详细了解课程内容、教学方式和学习路径，帮助你规划自己的学习之旅');
+
 const sections = [
   {
     label: '启动 Kickoff',

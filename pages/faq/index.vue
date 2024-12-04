@@ -61,4 +61,6 @@
 definePageMeta({
   layout: 'cms'
 })
+
+usePageTitle('常见问题', '解答学员常见问题，涵盖课程内容、学习方法、技术支持等各个方面');
 </script>
