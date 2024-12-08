@@ -142,5 +142,16 @@ export default defineNuxtConfig({
         searchDepth: 3
       }
     }
+  },
+
+  ui: {
+    notifications: {
+      position: 'top-right',
+      duration: 3000,
+      default: {
+        title: '提示',
+        closeButton: true,
+      }
+    }
   }
 });
