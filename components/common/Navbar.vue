@@ -13,8 +13,8 @@ const menuitems = [
     path: "/about",
   },
   {
-    title: "土狗",
-    path: "/meme",
+    title: "问答 FAQ",
+    path: "/faq",
   },
   {
     title: "联系 Contact",
@@ -104,7 +104,7 @@ const isDarkMode = computed(() => {
       <header class="flex flex-col justify-between items-center my-3 pt-2">
         <div class="flex w-full items-center justify-between">
           <NuxtLink to="/" class="text-lg">
-            <span class="font-bold text-slate-800 me m:text-slate-100">iLove</span><span
+            <span class="font-bold text-slate-800 dark:text-slate-100">iLove</span><span
               class="text-slate-500 dark:text-slate-400">Meme</span>
           </NuxtLink>
           <div class="flex items-center">
@@ -135,15 +135,15 @@ const isDarkMode = computed(() => {
               </NuxtLink>
             </li>
           </ul>
-          <!-- <div class="flex items-center mt-3 gap-4">
+          <div class="flex items-center mt-3 gap-4">
             <LandingLink href="https://s.zhaikr.com/web-course-1" size="md" :block="true"
               styleName="muted" target="_blank" rel="noopener"
               className="hover:text-gray-500 transition-colors duration-300">进入课程
             </LandingLink>
             <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=XMAS2024" size="md"
               :block="true" styleName="primary" target="_blank" rel="noopener"
-              className="transition-colors duration-300">立即加入</LandingLink> 
-          </div> -->
+              className="transition-colors duration-300">立即加入</LandingLink>
+          </div>
         </nav>
       </header>
     </CommonContainer>
