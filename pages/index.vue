@@ -8,8 +8,9 @@ usePageTitle(undefined, '从零开始学习 Web 开发，掌握前端技术栈�
 
 <template>
   <div class="index-page">
-    <h1 class="text-8xl font-bold text-center my-8">iLoveMeme</h1>
-    <h1 class="text-8xl font-bold text-center my-8">我爱土狗</h1>
+    <h1 class="text-8xl font-bold text-center my-8 hover:scale-125 transition-transform">iLoveMeme</h1>
+    <h1 class="text-8xl font-bold text-center my-8 hover:scale-125 transition-transform">我爱土狗</h1>
+    
     <LandingFeatures />
   </div>
 </template>
