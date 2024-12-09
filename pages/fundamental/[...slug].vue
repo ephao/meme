@@ -48,70 +48,25 @@
             <!-- 底部按钮和地址显示 -->
             <div class="flex flex-col items-center gap-4 mt-8">
               <button @click="handleDonate" 
-                class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-200">
-                打赏支持
+                class="inline-block bg-blue-500 text-sm text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors duration-200">
+                <Icon name="mdi:content-copy" class="inline-block mr-1" />
+                {{ buttonText }}
               </button>
             </div>
           </article>
         </div>
       </ContentDoc>
     </div>
-
-    <UModal v-model="showAddress">
-      <div class="p-4">
-        <h3 class="text-lg font-medium mb-4 dark:text-white">支持我们</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">您的打赏将用于升级服务器和节点，以提供更快的监控服务，感谢您的支持！</p>
-        <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">sol钱包地址为：</p>
-        <div class="relative bg-[#f5f5f5] dark:bg-gray-700 w-full p-4 rounded-lg">
-          <div class="flex items-center justify-between">
-            <p class="text-gray-700 dark:text-gray-200 font-mono break-all pr-8">
-              {{ solAddress }}
-            </p>
-            <button @click="copyAddress" 
-              class="absolute right-4 top-1/2 -translate-y-1/2">
-              <Icon name="material-symbols:content-copy-outline" 
-                class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 w-5 h-5" />
-            </button>
-          </div>
-        </div>
-        <div class="mt-4 flex justify-end">
-          <button @click="showAddress = false"
-            class="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 px-4 py-2">
-            关闭
-          </button>
-        </div>
-      </div>
-    </UModal>
   </div>
 </template>
 
 <script setup lang="ts">
 definePageMeta({
-  layout: 'meme'
+  layout: 'fundamental'
 })
 
-const solAddress = 'iov1iDHnH96wD8WB7XQwMkFTwJ36NxRiPPcDTkcPkJQ'
-const showAddress = ref(false)
-
-const copyAddress = () => {
-  navigator.clipboard.writeText(solAddress)
-    .then(() => {
-      toast.add({
-        description: '地址已复制到剪贴板！',
-        color: 'green'
-      })
-    })
-    .catch(() => {
-      toast.add({
-        description: '复制失败，请重试',
-        color: 'red'
-      })
-    })
-}
-
-const handleDonate = () => {
-  showAddress.value = true
-}
+const solAddress = 'xxxxxxxxxxxxxxx'
+const buttonText = ref('打赏支持')
 
 const breadcrumbLinks = (currentTitle: string) => [
   {
@@ -120,9 +75,9 @@ const breadcrumbLinks = (currentTitle: string) => [
     to: '/'
   },
   {
-    label: '梗图',
+    label: '冲狗秘籍',
     icon: 'i-heroicons-photo',
-    to: '/meme'
+    to: '/fundamental'
   },
   {
     label: currentTitle,
@@ -131,6 +86,26 @@ const breadcrumbLinks = (currentTitle: string) => [
 ]
 
 const toast = useToast()
+
+const handleDonate = () => {
+  navigator.clipboard.writeText(solAddress)
+  .then(() => {
+    toast.add({
+      description: 'Sol钱包地址已复制到剪贴板！',
+      color: 'green'
+    })
+    buttonText.value = '谢谢老板'
+    setTimeout(() => {
+      buttonText.value = '打赏支持'
+    }, 2000)
+  })
+  .catch(() => {
+    toast.add({
+      description: '复制失败，请重试',
+      color: 'red'
+    })
+  })
+}
 
 const { data: doc } = await useAsyncData('doc', () => queryContent().where({ _path: useRoute().path }).findOne())
 usePageTitle(doc.value?.title, doc.value?.summary);

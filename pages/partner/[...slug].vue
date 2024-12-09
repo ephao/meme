@@ -44,6 +44,15 @@
                 #{{ tag }}
               </span>
             </div>
+
+            <!-- 底部按钮 -->
+            <div class="flex justify-center mt-8">
+              <button @click="handleContact" 
+                class="inline-block bg-blue-500 text-sm text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors duration-200">
+                <Icon name="mdi:handshake" class="inline-block mr-1" />
+                联系我们
+              </button>
+            </div>
           </article>
         </div>
       </ContentDoc>
@@ -72,6 +81,15 @@ const breadcrumbLinks = (currentTitle: string) => [
     icon: 'i-heroicons-document-text'
   }
 ]
+
+const toast = useToast()
+
+const handleContact = () => {
+  toast.add({
+    description: '感谢您的关注！请通过邮箱联系我们',
+    color: 'blue'
+  })
+}
 
 const { data: doc } = await useAsyncData('doc', () => queryContent().where({ _path: useRoute().path }).findOne())
 usePageTitle(doc.value?.title, doc.value?.summary);

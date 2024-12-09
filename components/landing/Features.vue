@@ -38,36 +38,32 @@ const features = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-center gap-12">
         <LandingLink
-          href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=XMAS2024"
+          href="/meme"
           size="lg"
           :block="false"
           styleName="primary"
-          target="_blank"
-          rel="noopener"
-          class="transition-transform duration-300 hover:scale-110 bg-red-600 text-white text-xl font-bold px-8 py-4 shadow-lg hover:shadow-xl"
+          class="transition-transform duration-300 hover:scale-110 bg-red-600 text-white text-lg font-bold px-6 py-3 shadow-lg hover:shadow-xl"
         >Meme库</LandingLink>
         <LandingLink
-          href="https://discord.gg/ilovememe"
+          href="/fundamental"
           size="lg"
           :block="false"
           styleName="primary"
-          target="_blank"
-          rel="noopener"
-          class="transition-transform duration-300 hover:scale-110 bg-green-800 text-white text-xl font-bold px-8 py-4 shadow-lg hover:shadow-xl"
+          class="transition-transform duration-300 hover:scale-110 bg-green-800 text-white text-lg font-bold px-6 py-3 shadow-lg hover:shadow-xl"
         >冲狗技巧</LandingLink>
       </div>
 
       <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mt-16">
         <div v-for="item in features" 
              class="flex flex-col items-center text-center">
-          <div class="mb-2 bg-primary-0/80 dark:bg-primary-900/30 rounded-full p-6">
+          <div class="mb-2 bg-primary-0/80 dark:bg-primary-900/30 rounded-full p-8">
             <img v-if="item.icon.startsWith('/memeicon/')" 
                  :src="item.icon"
-                 class="w-24 h-24 transition-transform duration-300 hover:scale-125" 
+                 class="w-32 h-32 transition-transform duration-300 hover:scale-125" 
                  :alt="item.title">
             <Icon v-else
                   :name="item.icon" 
-                  class="w-24 h-24 text-primary-600 dark:text-primary-400 transition-transform duration-300 hover:scale-125" />
+                  class="w-32 h-32 text-primary-600 dark:text-primary-400 transition-transform duration-300 hover:scale-125" />
           </div>
           <h3 class="text-2xl font-bold mb-1">{{ item.title }}</h3>
           <p class="text-lg text-gray-600/90 dark:text-gray-400/90">

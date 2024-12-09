@@ -10,7 +10,7 @@ const menuitems = [
     path: "/meme", 
   },
   {
-    title: "冲狗技巧", // FAQ页面
+    title: "冲狗秘籍", // FAQ页面
     path: "/fundamental",
   },
   {

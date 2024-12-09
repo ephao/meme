@@ -20,7 +20,7 @@
       </a> -->
     </div>
     <p class="text-center text-sm text-slate-500">
-      Copyright © {{ new Date().getFullYear() }} <a target="_blank" href="https://x.com/interjc">Justin</a>
+      Copyright © {{ new Date().getFullYear() }} <a target="_blank" href="https://x.com/interjc">iLoveMeme</a>
       All rights reserved.
     </p>
   </footer>
