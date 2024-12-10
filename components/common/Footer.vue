@@ -1,14 +1,15 @@
 <template>
   <footer class="my-20">
     <div class="common-social-links flex space-x-4 items-center justify-center mb-2">
-      <a title="关注 X@interjc" href="https://x.com/interjc" target="_blank" rel="noopener noreferrer"
-        class="text-2xl text-slate-500 hover:text-gray-600 transition-colors duration-300">
-        <Icon name="mdi:twitter" />
+      <a title="关注 X@iLoooveMeme" href="https://twitter.com/intent/follow?screen_name=iLoooveMeme" target="_blank" rel="noopener noreferrer"
+        class="flex items-center text-slate-500 hover:text-gray-600 transition-colors duration-300">
+        <Icon name="mdi:twitter" class="text-2xl mr-2"/>
+        <span>@iLoooveMeme</span>
       </a>
-      <a title="关注我的公众号 @justinjapan" href="https://s.zhaikr.com/vj" target="_blank" rel="noopener noreferrer"
-        class="text-2xl text-slate-500 hover:text-gray-600 transition-colors duration-300">
-        <Icon name="mdi:email" />
-      </a>
+      <div class="flex items-center">
+        <Icon name="mdi:email" class="text-2xl text-slate-500 mr-2"/>
+        <span class="text-slate-500">ford889313@gmail.com</span>
+      </div>
       <!-- <a title="立即加入课程" href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=XMAS2024"
         target="_blank" rel="noopener noreferrer"
         class="text-2xl text-slate-500 hover:text-gray-600 transition-colors duration-300">
@@ -20,7 +21,7 @@
       </a> -->
     </div>
     <p class="text-center text-sm text-slate-500">
-      Copyright © {{ new Date().getFullYear() }} <a target="_blank" href="https://x.com/interjc">iLoveMeme</a>
+      Copyright © {{ new Date().getFullYear() }} <a target="_blank" href="https://twitter.com/intent/follow?screen_name=iLoooveMeme">iLoveMeme</a>
       All rights reserved.
     </p>
   </footer>
