@@ -13,10 +13,7 @@ const menuitems = [
     title: "冲狗秘籍", // FAQ页面
     path: "/fundamental",
   },
-  {
-    title: "联系方式", // 联系页面
-    path: "/contact",
-  },
+
 ];
 
 // 控制移动端菜单的开关状态
@@ -98,7 +95,11 @@ const isDarkMode = computed(() => {
               class="pt-1.5 text-gray-500 dark:text-slate-600 hover:text-gray-700 dark:hover:text-gray-400">
               <Icon name="ph:lightbulb-filament-bold" class="h-5 w-5" />
             </button>
-            <!-- 注释掉的其他链接 -->
+            <!-- Twitter链接 -->
+            <a href="https://twitter.com/intent/follow?screen_name=iLoooveMeme" target="_blank" rel="noopener noreferrer"
+              class="pt-1.5 text-gray-500 dark:text-slate-600 hover:text-gray-700 dark:hover:text-gray-400">
+              <Icon name="mdi:twitter" class="h-5 w-5" />
+            </a>
           </div>
         </div>
       </header>
@@ -126,6 +127,11 @@ const isDarkMode = computed(() => {
               class="mr-4 pt-1.5 text-gray-500 dark:text-slate-600 hover:text-gray-700 dark:hover:text-gray-200">
               <Icon name="ph:lightbulb-filament-bold" class="h-5 w-5" />
             </button>
+            <!-- Twitter链接 -->
+            <a href="https://twitter.com/intent/follow?screen_name=iLoooveMeme" target="_blank" rel="noopener noreferrer"
+              class="mr-4 pt-1.5 text-gray-500 dark:text-slate-600 hover:text-gray-700 dark:hover:text-gray-200">
+              <Icon name="mdi:twitter" class="h-5 w-5" />
+            </a>
             <!-- 菜单按钮 -->
             <button @click="open = !open" class="text-gray-800 dark:text-gray-200">
               <svg fill="currentColor" class="w-4 h-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
