@@ -20,8 +20,7 @@
             <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-8">
               {{ doc.title }}
             </h1>
-            <small v-if="doc.category" class="inline-block text-indigo-300 text-base md:text-lg mb-8 px-4 py-2 rounded-full bg-indigo-900/50 border border-indigo-300/30">{{ doc.category }}</small>
-            <p class="text-xl md:text-2xl text-gray-200">{{ doc.summary }}</p>
+            <!-- <small v-if="doc.category" class="inline-block text-indigo-300 text-base md:text-lg mb-8 px-4 py-2 rounded-full bg-indigo-900/50 border border-indigo-300/30">{{ doc.category }}</small> -->
           </div>
         </div>
 
@@ -54,7 +53,7 @@
     <UModal v-model="showAddress">
       <div class="p-4">
         <h3 class="text-lg font-medium mb-4 dark:text-white">支持我们</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">您的打赏将用于升级服务器和节点，以提供更快的监控服务，感谢您的支持！</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">您的打赏将用于升级服务器和节点，以提供更好的内容，感谢您的支持！</p>
         <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">sol钱包地址为：</p>
         <div class="relative bg-[#f5f5f5] dark:bg-gray-700 w-full p-4 rounded-lg">
           <div class="flex items-center justify-between">
@@ -129,3 +128,21 @@ const toast = useToast()
 const { data: doc } = await useAsyncData('doc', () => queryContent().where({ _path: useRoute().path }).findOne())
 usePageTitle(doc.value?.title, doc.value?.summary);
 </script>
+
+<style>
+.prose h2 a,
+.prose h2 a:hover,
+.prose h2 a:visited {
+  text-decoration: none !important;
+  pointer-events: none !important;
+  border-bottom: none !important;
+}
+
+.prose h3 a,
+.prose h3 a:hover,
+.prose h3 a:visited {
+  text-decoration: none !important;
+  pointer-events: none !important;
+  border-bottom: none !important;
+}
+</style>
