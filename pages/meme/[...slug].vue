@@ -17,23 +17,17 @@
           </div>
 
           <div class="relative max-w-screen-xl mx-auto px-8 z-10 text-center text-white">
-            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-2">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-8">
               {{ doc.title }}
-
             </h1>
-            <small v-if="doc.category" class="inline-block text-indigo-300 text-sm my-2 px-3 py-1 rounded-full bg-indigo-900/50 border border-indigo-300/30">{{ doc.category }}</small>
-            <p class="text-lg md:text-xl mb-12 text-gray-200">{{ doc.summary }}</p>
-            <a :href="doc.ref" target="_blank" rel="noopener noreferrer"
-              class="inline-block bg-white/70 text-sm text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-slate-100/70 transition-colors duration-200 no-underline"
-              aria-label="在新窗口中了解更多" tabindex="0">
-              立即访问
-            </a>
+            <small v-if="doc.category" class="inline-block text-indigo-300 text-base md:text-lg mb-8 px-4 py-2 rounded-full bg-indigo-900/50 border border-indigo-300/30">{{ doc.category }}</small>
+            <p class="text-xl md:text-2xl text-gray-200">{{ doc.summary }}</p>
           </div>
         </div>
 
         <!-- Content Section -->
         <div class="max-w-5xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg mt-8 shadow-sm">
-          <article class="prose dark:prose-invert max-w-none">
+          <article class="prose dark:prose-invert max-w-none prose-headings:no-underline prose-h2:pointer-events-none prose-h3:pointer-events-none">
             <!-- 内容正文 -->
             <ContentRenderer :value="doc" />
 
@@ -90,7 +84,7 @@ definePageMeta({
   layout: 'meme'
 })
 
-const solAddress = 'iov1iDHnH96wD8WB7XQwMkFTwJ36NxRiPPcDTkcPkJQ'
+const solAddress = '8cY8VY6PT73pnkuKKmFtawPfN3etCbpBrb7fdx3k9g7K'
 const showAddress = ref(false)
 
 const copyAddress = () => {
@@ -120,7 +114,7 @@ const breadcrumbLinks = (currentTitle: string) => [
     to: '/'
   },
   {
-    label: '梗图',
+    label: 'Meme库',
     icon: 'i-heroicons-photo',
     to: '/meme'
   },

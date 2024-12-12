@@ -45,11 +45,11 @@
 
 <script setup lang="ts">
 definePageMeta({
-  layout: 'fundamental',
+  layout: 'meme',
   ssr: false
 })
 
-usePageTitle('合作伙伴', '展示我们的合作伙伴和他们的成功案例，了解如何通过合作实现共赢');
+usePageTitle('冲狗秘籍', '看完就懂，学完就会！冲狗秘籍，带你起飞！');
 
 const itemsPerPage = 6
 const displayedItems = ref<any[]>([])

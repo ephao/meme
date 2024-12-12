@@ -17,23 +17,17 @@
           </div>
 
           <div class="relative max-w-screen-xl mx-auto px-8 z-10 text-center text-white">
-            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-2">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-8">
               {{ doc.title }}
-
             </h1>
-            <small v-if="doc.category" class="inline-block text-indigo-300 text-sm my-2 px-3 py-1 rounded-full bg-indigo-900/50 border border-indigo-300/30">{{ doc.category }}</small>
-            <p class="text-lg md:text-xl mb-12 text-gray-200">{{ doc.summary }}</p>
-            <a :href="doc.ref" target="_blank" rel="noopener noreferrer"
-              class="inline-block bg-white/70 text-sm text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-slate-100/70 transition-colors duration-200 no-underline"
-              aria-label="在新窗口中了解更多" tabindex="0">
-              立即访问
-            </a>
+            <small v-if="doc.category" class="inline-block text-indigo-300 text-base md:text-lg mb-8 px-4 py-2 rounded-full bg-indigo-900/50 border border-indigo-300/30">{{ doc.category }}</small>
+            <p class="text-xl md:text-2xl text-gray-200">{{ doc.summary }}</p>
           </div>
         </div>
 
         <!-- Content Section -->
         <div class="max-w-5xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg mt-8 shadow-sm">
-          <article class="prose dark:prose-invert max-w-none">
+          <article class="prose dark:prose-invert max-w-none prose-headings:no-underline prose-h2:pointer-events-none prose-h3:pointer-events-none">
             <!-- 内容正文 -->
             <ContentRenderer :value="doc" />
 
@@ -48,25 +42,70 @@
             <!-- 底部按钮和地址显示 -->
             <div class="flex flex-col items-center gap-4 mt-8">
               <button @click="handleDonate" 
-                class="inline-block bg-blue-500 text-sm text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors duration-200">
-                <Icon name="mdi:content-copy" class="inline-block mr-1" />
-                {{ buttonText }}
+                class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-200">
+                打赏支持
               </button>
             </div>
           </article>
         </div>
       </ContentDoc>
     </div>
+
+    <UModal v-model="showAddress">
+      <div class="p-4">
+        <h3 class="text-lg font-medium mb-4 dark:text-white">支持我们</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">您的打赏将用于升级服务器和节点，以提供更快的监控服务，感谢您的支持！</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">sol钱包地址为：</p>
+        <div class="relative bg-[#f5f5f5] dark:bg-gray-700 w-full p-4 rounded-lg">
+          <div class="flex items-center justify-between">
+            <p class="text-gray-700 dark:text-gray-200 font-mono break-all pr-8">
+              {{ solAddress }}
+            </p>
+            <button @click="copyAddress" 
+              class="absolute right-4 top-1/2 -translate-y-1/2">
+              <Icon name="material-symbols:content-copy-outline" 
+                class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 w-5 h-5" />
+            </button>
+          </div>
+        </div>
+        <div class="mt-4 flex justify-end">
+          <button @click="showAddress = false"
+            class="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 px-4 py-2">
+            关闭
+          </button>
+        </div>
+      </div>
+    </UModal>
   </div>
 </template>
 
 <script setup lang="ts">
 definePageMeta({
-  layout: 'fundamental'
+  layout: 'meme'
 })
 
-const solAddress = 'xxxxxxxxxxxxxxx'
-const buttonText = ref('打赏支持')
+const solAddress = '8cY8VY6PT73pnkuKKmFtawPfN3etCbpBrb7fdx3k9g7K'
+const showAddress = ref(false)
+
+const copyAddress = () => {
+  navigator.clipboard.writeText(solAddress)
+    .then(() => {
+      toast.add({
+        description: '地址已复制到剪贴板！',
+        color: 'green'
+      })
+    })
+    .catch(() => {
+      toast.add({
+        description: '复制失败，请重试',
+        color: 'red'
+      })
+    })
+}
+
+const handleDonate = () => {
+  showAddress.value = true
+}
 
 const breadcrumbLinks = (currentTitle: string) => [
   {
@@ -86,26 +125,6 @@ const breadcrumbLinks = (currentTitle: string) => [
 ]
 
 const toast = useToast()
-
-const handleDonate = () => {
-  navigator.clipboard.writeText(solAddress)
-  .then(() => {
-    toast.add({
-      description: 'Sol钱包地址已复制到剪贴板！',
-      color: 'green'
-    })
-    buttonText.value = '谢谢老板'
-    setTimeout(() => {
-      buttonText.value = '打赏支持'
-    }, 2000)
-  })
-  .catch(() => {
-    toast.add({
-      description: '复制失败，请重试',
-      color: 'red'
-    })
-  })
-}
 
 const { data: doc } = await useAsyncData('doc', () => queryContent().where({ _path: useRoute().path }).findOne())
 usePageTitle(doc.value?.title, doc.value?.summary);
