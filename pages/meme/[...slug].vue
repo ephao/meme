@@ -51,28 +51,32 @@
     </div>
 
     <UModal v-model="showAddress">
-      <div class="p-4">
-        <h3 class="text-lg font-medium mb-4 dark:text-white">支持我们</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">您的打赏将用于升级服务器和节点，以提供更好的内容，感谢您的支持！</p>
-        <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">sol钱包地址为：</p>
-        <div class="relative bg-[#f5f5f5] dark:bg-gray-700 w-full p-4 rounded-lg">
-          <div class="flex items-center justify-between">
-            <p class="text-gray-700 dark:text-gray-200 font-mono break-all pr-8">
-              {{ solAddress }}
-            </p>
-            <button @click="copyAddress" 
-              class="absolute right-4 top-1/2 -translate-y-1/2">
-              <Icon name="material-symbols:content-copy-outline" 
-                class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 w-5 h-5" />
-            </button>
+      <div class="modal-custom-wrapper">
+        <UCard>
+          <div class="p-3">
+            <h3 class="text-lg font-medium mb-3 dark:text-white">支持我们</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">您的打赏将用于升级服务器和节点，以提供更好的内容，感谢您的支持！</p>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">sol钱包地址为：</p>
+            <div class="relative bg-[#f5f5f5] dark:bg-gray-700 w-full p-3 rounded-lg">
+              <div class="flex items-center justify-between">
+                <p class="text-gray-700 dark:text-gray-200 font-mono break-all pr-8">
+                  {{ solAddress }}
+                </p>
+                <button @click="copyAddress" 
+                  class="absolute right-4 top-1/2 -translate-y-1/2">
+                  <Icon name="material-symbols:content-copy-outline" 
+                    class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 w-5 h-5" />
+                </button>
+              </div>
+            </div>
+            <div class="mt-2 flex justify-end">
+              <button @click="showAddress = false"
+                class="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 px-3 py-1">
+                关闭
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="mt-4 flex justify-end">
-          <button @click="showAddress = false"
-            class="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 px-4 py-2">
-            关闭
-          </button>
-        </div>
+        </UCard>
       </div>
     </UModal>
   </div>
@@ -144,5 +148,38 @@ usePageTitle(doc.value?.title, doc.value?.summary);
   text-decoration: none !important;
   pointer-events: none !important;
   border-bottom: none !important;
+}
+
+/* 模态框样式 */
+.modal-custom-wrapper {
+  background-color: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.dark .modal-custom-wrapper {
+  background-color: #1f2937;
+}
+
+:deep(.modal-container),
+:deep(.modal-wrapper),
+:deep(.modal),
+:deep(.modal-content),
+:deep(.u-card) {
+  background: none !important;
+}
+
+:deep(.u-card) {
+  border-radius: 0.75rem !important;
+  overflow: hidden;
+}
+
+.dark :deep(.u-card),
+.dark :deep(.modal-content) {
+  background: none !important;
+}
+
+:deep(.modal-overlay) {
+  background-color: rgba(0, 0, 0, 0.75) !important;
 }
 </style>
