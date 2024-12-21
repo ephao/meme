@@ -17,7 +17,7 @@
     "@nuxt/image": "^1.8.1",
     "@nuxt/ui": "^2.18.7",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/sitemap": "^6.1.5",
+    "@nuxtjs/sitemap": "^7.0.0",
     "@tailwindcss/typography": "^0.5.15",
     "autoprefixer": "^10.4.20",
     "nuxt": "^3.13.2",
@@ -28,6 +28,8 @@
     "vue-router": "^4.4.5"
   },
   "dependencies": {
-    "@yeger/vue-masonry-wall": "^5.0.16"
+    "@yeger/vue-masonry-wall": "^5.0.16",
+    "nuxt-simple-sitemap": "^4.4.1",
+    "sitemap-ts": "^1.8.0"
   }
 }

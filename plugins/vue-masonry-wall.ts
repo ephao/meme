@@ -1,5 +1,7 @@
-import MasonryWall from "@yeger/vue-masonry-wall";
+import { defineNuxtPlugin } from '#app'
+import type { NuxtApp } from '#app'
+import VueMasonryWall from '@yeger/vue-masonry-wall'
 
-export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.use(MasonryWall);
-});
+export default defineNuxtPlugin((nuxtApp: NuxtApp) => {
+  nuxtApp.vueApp.use(VueMasonryWall)
+})

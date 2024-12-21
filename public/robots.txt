@@ -1,1 +1,19 @@
+# iLoveMeme robots.txt
 
+User-agent: *
+Allow: /
+Allow: /meme/
+Allow: /fundamental/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_nuxt/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://ilovememe.org/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Host
+Host: https://ilovememe.org

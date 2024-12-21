@@ -17,8 +17,42 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image",
     "@nuxtjs/color-mode",
-    "@nuxtjs/sitemap",
+    "@nuxtjs/sitemap"
   ],
+
+  site: {
+    url: 'https://ilovememe.org'
+  },
+
+  sitemap: {
+    sitemaps: {
+      main: {
+        exclude: ['/admin/**', '/private/**'],
+        urls: [
+          {
+            loc: 'https://ilovememe.org/',
+            changefreq: 'daily',
+            priority: 1.0,
+            lastmod: new Date().toISOString()
+          },
+          {
+            loc: 'https://ilovememe.org/meme',
+            changefreq: 'daily',
+            priority: 0.8,
+            lastmod: new Date().toISOString()
+          },
+          {
+            loc: 'https://ilovememe.org/fundamental',
+            changefreq: 'daily',
+            priority: 0.8,
+            lastmod: new Date().toISOString()
+          }
+        ]
+      }
+    },
+    defaultSitemapsChunkSize: 1000,
+    strictNuxtContentPaths: true
+  },
 
   app: {
     head: {
@@ -29,7 +63,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
+            "探索Meme世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
         },
         { property: "og:url", content: "https://ilovememe.org/" },
         { property: "og:type", content: "website" },
@@ -37,7 +71,7 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
+            "探索Meme世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
         },
         {
           property: "og:image",
@@ -50,13 +84,13 @@ export default defineNuxtConfig({
         {
           name: "twitter:description",
           content:
-            "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
+            "探索Meme世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
         },
         {
           name: "twitter:image",
           content: "https://ilovememe.org/iLoveMeme.png",
         },
-        { name: "keywords", content: "Meme币,土狗币,Web3,加密货币,区块链,投资策略" },
+        { name: "keywords", content: "Meme,土狗,Web3,加密货币,区块链,投资策略" },
         { name: "author", content: "iLoveMeme" },
         { name: "robots", content: "index, follow" },
         { name: "googlebot", content: "index, follow" },
@@ -80,45 +114,6 @@ export default defineNuxtConfig({
           type: 'text/javascript'
         }
       ]
-    },
-  },
-
-  site: {
-    url: "https://ilovememe.org",
-    name: "iLoveMeme | 我爱土狗",
-    description:
-      "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
-    defaultLocale: "zh",
-    identity: {
-      type: "Organization",
-      name: "iLoveMeme",
-      logo: "https://ilovememe.org/iLoveMeme.png",
-    },
-    twitter: {
-      card: "summary_large_image",
-      site: "@iLoooveMeme",
-      creator: "@iLoooveMeme",
-    },
-    trailingSlash: true,
-    indexable: true,
-    robots: {
-      index: true,
-      follow: true,
-    },
-    sitemap: {
-      urls: [],
-      excludeUrls: ["/admin", "/private"],
-      hostname: "https://ilovememe.org",
-      gzip: true,
-      xsl: true,
-      lastmod: new Date().toISOString(),
-      changefreq: "weekly",
-      priority: 1.0,
-      defaults: {
-        changefreq: "daily",
-        priority: 0.8,
-        lastmod: new Date().toISOString(),
-      },
     },
   },
 
