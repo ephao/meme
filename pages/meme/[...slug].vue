@@ -131,6 +131,25 @@ const toast = useToast()
 
 const { data: doc } = await useAsyncData('doc', () => queryContent().where({ _path: useRoute().path }).findOne())
 usePageTitle(doc.value?.title, doc.value?.summary);
+
+// 添加SEO优化
+useSeoMeta({
+  title: `${doc.value?.title} | iLoveMeme`,
+  description: doc.value?.summary || '探索土狗币世界，发现最新���Meme趋势和投资机会',
+  ogTitle: `${doc.value?.title} | iLoveMeme`,
+  ogDescription: doc.value?.summary || '探索土狗币世界，发现最新的Meme趋势和投资机会',
+  ogImage: doc.value?.image || '/iLoveMeme.png',
+  twitterCard: 'summary_large_image',
+  twitterTitle: `${doc.value?.title} | iLoveMeme`,
+  twitterDescription: doc.value?.summary || '探索土狗币世界，发现最新的Meme趋势和投资机会',
+  twitterImage: doc.value?.image || '/iLoveMeme.png',
+  // 添加文章特定的meta标签
+  ogType: 'article',
+  articlePublishedTime: doc.value?.date,
+  articleModifiedTime: doc.value?.updatedAt,
+  articleAuthor: ['iLoveMeme'],
+  articleTag: doc.value?.tags
+})
 </script>
 
 <style>

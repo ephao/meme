@@ -22,85 +22,82 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Web 开发从入门到上线",
+      title: "iLoveMeme | 我爱土狗",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
           content:
-            "从零开始学习 Web 开发，掌握前端技术栈，完成项目从开发到上线的全过程",
+            "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
         },
-        { property: "og:url", content: "https://justincourse.com/" },
+        { property: "og:url", content: "https://ilovememe.org/" },
         { property: "og:type", content: "website" },
-        { property: "og:title", content: "Web 开发从入门到上线" },
+        { property: "og:title", content: "iLoveMeme | 我爱土狗 - 探索Meme世界的终极指南" },
         {
           property: "og:description",
           content:
-            "从零开始学习 Web 开发，掌握前端技术栈，完成项目从开发到上线的全过程",
+            "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
         },
         {
           property: "og:image",
-          content: "https://justincourse.com/og-image-0.png",
+          content: "https://ilovememe.org/iLoveMeme.png",
         },
         { name: "twitter:card", content: "summary_large_image" },
-        { property: "twitter:domain", content: "justincourse.com" },
-        { property: "twitter:url", content: "https://justincourse.com/" },
-        { name: "twitter:title", content: "Web 开发从入门到上线" },
+        { property: "twitter:domain", content: "ilovememe.org" },
+        { property: "twitter:url", content: "https://ilovememe.org/" },
+        { name: "twitter:title", content: "iLoveMeme | 我爱土狗 - 探索Meme世界的终极指南" },
         {
           name: "twitter:description",
           content:
-            "从零开始学习 Web 开发，掌握前端技术栈，完成项目从开发到上线的全过程",
+            "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
         },
         {
           name: "twitter:image",
-          content: "https://justincourse.com/og-image-0.png",
+          content: "https://ilovememe.org/iLoveMeme.png",
         },
+        { name: "keywords", content: "Meme币,土狗币,Web3,加密货币,区块链,投资策略" },
+        { name: "author", content: "iLoveMeme" },
+        { name: "robots", content: "index, follow" },
+        { name: "googlebot", content: "index, follow" },
+        { property: "og:site_name", content: "iLoveMeme" },
+        { property: "og:locale", content: "zh_CN" },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "canonical", href: "https://ilovememe.org" }
+      ],
       script: [
-        { src: "/tracking.js" },
         {
-          src: "https://www.googletagmanager.com/gtag/js?id=AW-16781608122",
+          src: "https://www.googletagmanager.com/gtag/js?id=G-BQ2VDSR2D2",
           async: true
         },
         {
           children: `window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'AW-16781608122');`,
-          type: 'text/javascript'
-        },
-        {
-          src: "//cdn.trackdesk.com/tracking.js",
-          async: true
-        },
-        {
-          children: `(function(t,d,k){(t[k]=t[k]||[]).push(d);t[d]=t[d]||t[k].f||function(){(t[d].q=t[d].q||[]).push(arguments)}})(window,"trackdesk","TrackdeskObject");
-          trackdesk('yoko', 'click');`,
+          gtag('config', 'G-BQ2VDSR2D2');`,
           type: 'text/javascript'
         }
-      ],
+      ]
     },
   },
 
-  compatibilityDate: "2024-11-05",
-
   site: {
-    url: "https://justincourse.com",
-    name: "Web 开发从入门到上线",
+    url: "https://ilovememe.org",
+    name: "iLoveMeme | 我爱土狗",
     description:
-      "从零开始学习 Web 开发，掌握前端技术栈，完成项目从开发到上线的全过程",
+      "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
     defaultLocale: "zh",
     identity: {
       type: "Organization",
-      name: "JustinCourse",
-      logo: "https://justincourse.com/og-image-0.png",
+      name: "iLoveMeme",
+      logo: "https://ilovememe.org/iLoveMeme.png",
     },
     twitter: {
       card: "summary_large_image",
-      site: "@interjc",
-      creator: "@interjc",
+      site: "@iLoooveMeme",
+      creator: "@iLoooveMeme",
     },
     trailingSlash: true,
     indexable: true,
@@ -111,7 +108,7 @@ export default defineNuxtConfig({
     sitemap: {
       urls: [],
       excludeUrls: ["/admin", "/private"],
-      hostname: "https://justincourse.com",
+      hostname: "https://ilovememe.org",
       gzip: true,
       xsl: true,
       lastmod: new Date().toISOString(),
@@ -127,8 +124,8 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: "",
-    fallback: "light", // 默认颜色模式
-    preference: "system", // 优先使用系统颜色模式
+    fallback: "light",
+    preference: "system",
     dataValue: "theme",
   },
 
@@ -144,14 +141,5 @@ export default defineNuxtConfig({
     }
   },
 
-  ui: {
-    notifications: {
-      position: 'top-right',
-      duration: 3000,
-      default: {
-        title: '提示',
-        closeButton: true,
-      }
-    }
-  }
+  compatibilityDate: "2024-11-05"
 });

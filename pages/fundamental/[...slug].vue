@@ -132,6 +132,26 @@ const toast = useToast()
 
 const { data: doc } = await useAsyncData('doc', () => queryContent().where({ _path: useRoute().path }).findOne())
 usePageTitle(doc.value?.title, doc.value?.summary);
+
+// 添加SEO优化
+useSeoMeta({
+  title: `${doc.value?.title} | iLoveMeme`,
+  description: doc.value?.summary || '学习Web3和加密货币的基础知识，掌握区块链技术的核心概念',
+  ogTitle: `${doc.value?.title} | iLoveMeme`,
+  ogDescription: doc.value?.summary || '学习Web3和加密货币的基础知识，掌握区块链技术的核心概念',
+  ogImage: doc.value?.image || '/iLoveMeme.png',
+  twitterCard: 'summary_large_image',
+  twitterTitle: `${doc.value?.title} | iLoveMeme`,
+  twitterDescription: doc.value?.summary || '学习Web3和加密货币的基础知识，掌握区块链技术的核心概念',
+  twitterImage: doc.value?.image || '/iLoveMeme.png',
+  // 添加文章特定的meta标签
+  ogType: 'article',
+  articlePublishedTime: doc.value?.date,
+  articleModifiedTime: doc.value?.updatedAt,
+  articleAuthor: ['iLoveMeme'],
+  articleTag: doc.value?.tags,
+  articleSection: doc.value?.category || 'Web3基础'
+})
 </script>
 
 <style>

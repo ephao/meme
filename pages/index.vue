@@ -3,7 +3,19 @@ definePageMeta({
   layout: "landing",
 });
 
-usePageTitle(undefined, '从零开始学习 Web 开发，掌握前端技术栈，完成项目从开发到上线的全过程，使用 AI 辅助开发');
+usePageTitle('我爱土狗', '探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略');
+
+useSeoMeta({
+  title: 'iLoveMeme | 我爱土狗 - 探索Meme币世界的终极指南',
+  description: '探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。',
+  ogTitle: 'iLoveMeme | 我爱土狗 - 探索Meme币世界的终极指南',
+  ogDescription: '探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。',
+  ogImage: '/iLoveMeme.png',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'iLoveMeme | 我爱土狗 - 探索Meme币世界的终极指南',
+  twitterDescription: '探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。',
+  twitterImage: '/iLoveMeme.png'
+})
 </script>
 
 <template>
