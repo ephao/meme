@@ -63,32 +63,48 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "探索Meme世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
+            "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
         },
         { property: "og:url", content: "https://ilovememe.org/" },
         { property: "og:type", content: "website" },
-        { property: "og:title", content: "iLoveMeme | 我爱土狗 - 探索Meme世界的终极指南" },
+        { property: "og:title", content: "iLoveMeme | 我爱土狗 - 探索Meme币世界的终极指南" },
         {
           property: "og:description",
           content:
-            "探索Meme世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
+            "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
         },
         {
           property: "og:image",
-          content: "https://ilovememe.org/ilovememe.png",
+          content: "https://ilovememe.org/iLoveMeme.png",
+        },
+        {
+          property: "og:image:secure_url",
+          content: "https://ilovememe.org/iLoveMeme.png",
+        },
+        {
+          property: "og:image:type",
+          content: "image/png",
+        },
+        {
+          property: "og:image:width",
+          content: "1200",
+        },
+        {
+          property: "og:image:height",
+          content: "675",
         },
         { name: "twitter:card", content: "summary_large_image" },
         { property: "twitter:domain", content: "ilovememe.org" },
         { property: "twitter:url", content: "https://ilovememe.org/" },
-        { name: "twitter:title", content: "iLoveMeme | 我爱土狗 - 探索Meme世界的终极指南" },
+        { name: "twitter:title", content: "iLoveMeme | 我爱土狗 - 探索Meme币世界的终极指南" },
         {
           name: "twitter:description",
           content:
-            "探索Meme世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
+            "探索土狗币世界，发现最新的Meme趋势和投资机会，分享社区见解和策略。加入我们，一起在Web3世界中发现更多可能。",
         },
         {
           name: "twitter:image",
-          content: "https://ilovememe.org/ilovememe.png",
+          content: "https://ilovememe.org/iLoveMeme.png",
         },
         { name: "keywords", content: "Meme,土狗,Web3,加密货币,区块链,投资策略" },
         { name: "author", content: "iLoveMeme" },
