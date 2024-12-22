@@ -75,7 +75,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://ilovememe.org/iLoveMeme.png",
+          content: "https://ilovememe.org/ilovememe.png",
         },
         { name: "twitter:card", content: "summary_large_image" },
         { property: "twitter:domain", content: "ilovememe.org" },
@@ -88,7 +88,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "https://ilovememe.org/iLoveMeme.png",
+          content: "https://ilovememe.org/ilovememe.png",
         },
         { name: "keywords", content: "Meme,土狗,Web3,加密货币,区块链,投资策略" },
         { name: "author", content: "iLoveMeme" },
