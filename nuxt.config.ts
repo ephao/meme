@@ -25,7 +25,15 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    exclude: ['/admin/**', '/private/**'],
+    exclude: [
+      '/admin/**', 
+      '/private/**',
+      '/fundamental/list',
+      '/meme/list'
+    ],
+    include: [
+      '/meme/zhpepe'
+    ],
     autoLastmod: true
   },
 
