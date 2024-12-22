@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image",
     "@nuxtjs/color-mode",
-    "@nuxtjs/sitemap"
+    "nuxt-simple-sitemap"
   ],
 
   site: {
@@ -25,33 +25,8 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    sitemaps: {
-      main: {
-        exclude: ['/admin/**', '/private/**'],
-        urls: [
-          {
-            loc: 'https://ilovememe.org/',
-            changefreq: 'daily',
-            priority: 1.0,
-            lastmod: new Date().toISOString()
-          },
-          {
-            loc: 'https://ilovememe.org/meme',
-            changefreq: 'daily',
-            priority: 0.8,
-            lastmod: new Date().toISOString()
-          },
-          {
-            loc: 'https://ilovememe.org/fundamental',
-            changefreq: 'daily',
-            priority: 0.8,
-            lastmod: new Date().toISOString()
-          }
-        ]
-      }
-    },
-    defaultSitemapsChunkSize: 1000,
-    strictNuxtContentPaths: true
+    exclude: ['/admin/**', '/private/**'],
+    autoLastmod: true
   },
 
   app: {
