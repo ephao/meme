@@ -25,16 +25,20 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
+    urls: [
+      '/',
+      '/meme',
+      '/fundamental',
+      '/meme/zhpepe'
+    ],
     exclude: [
       '/admin/**', 
       '/private/**',
       '/fundamental/list',
       '/meme/list'
     ],
-    include: [
-      '/meme/zhpepe'
-    ],
-    autoLastmod: true
+    autoLastmod: true,
+    xsl: false
   },
 
   app: {
