@@ -1,6 +1,6 @@
 ---
 title: Pepe the Frog
-summary: Pepe the Frog：从漫画角色到网络表情，再到争议符号的回归之路
+summary: 从漫画角色到网络表情，再到争议符号的回归之路
 url: /meme/zhpepe
 image: /images/partner/pepe.png
 tags:
@@ -8,13 +8,13 @@ tags:
   - 互联网文化
   - Pepe the Frog
   - 梗图
-category: 互联网文化
-description: Pepe the Frog 已经成为一个互联网文化现象，从一个普通的漫画角色变成了全球最著名的网络表情之一。他的发展历程既离奇又充满争议，在 X (前身为 Twitter)、Reddit、TikTok 和 4chan 等各大网络社区中广受关注。本文将为您详细介绍 Pepe 的诞生背景、走红历程、与争议团体的关联，以及他在网络文化中经久不衰的影响力。
+category: 蛙系
+description: 全面介绍Pepe the Frog的起源、发展历程及其文化影响力，探讨这个表情包如何从一个普通漫画角色成为全球最著名的网络符号之一。
 ---
 
 ## Pepe the Frog：从漫画角色到网络表情，再到争议符号的回归之路
 
-Pepe the Frog 已经成为一个互联网文化现象，从一个普通的漫画角色变成了全球最著名的网络表情之一。他的发展历程既离奇又充满争议，在 X (前身为 Twitter)、Reddit、TikTok 和 4chan 等各大网络社区中广受关注。本文将为您详细介绍 Pepe 的诞生背景、走红历程、与争议团体的关联，以及他在网络文化中经久不衰的影响力。
+互联网是流行文化的沃土，而在众多网络现象中，"Pepe the Frog" 格外引人注目。这只拟人化的青蛙已经成为全球最著名的网络表情之一，不仅催生了数不清的表情包和加密货币，还吸引了各大品牌和世界领导人的目光。那么，这只神秘的青蛙究竟是谁？为什么他能如此打动互联网用户的心？
 
 ## Pepe 的诞生
 
@@ -60,7 +60,7 @@ Reddit 作为一个热门的在线论坛，有很多专门讨论 Pepe the Frog �
 
 不仅如此，Pepe 还延伸到了 TikTok 上的加密货币领域。一种名为 Pepeto coin 的表情包加密货币在平台上获得了关注，这进一步证明了 Pepe 在数字世界的影响力。
 
-## 结论
+## 结语
 
 Pepe the Frog 从漫画角色到网络表情包，再到争议符号最后重新回归的历程，见证了网络文化的持续变迁。他的故事展示了表情包、网络社区和政治意识形态之间错综复杂的关系。虽然他与极端组织的关联仍然饱受争议，但 Pepe 经久不衰的人气和超强的适应能力表明，他在未来的互联网世界中仍将占据重要位置。
 
@@ -82,4 +82,3 @@ Pepe 的故事是一个典型案例，展现了网络符号是如何被创造、
 14. Pepe the Frog is your Meme of the Decade : r/dankmemes - Reddit, accessed January 5, 2025, https://www.reddit.com/r/dankmemes/comments/ew6oev/pepe_the_frog_is_your_meme_of_the_decade/
 15. Can somebody, in detail, explain to me what the Pepe the Frog meme is, and why people are freaking out about it now? - Reddit, accessed January 5, 2025, https://www.reddit.com/r/OutOfTheLoop/comments/545iam/can_somebody_in_detail_explain_to_me_what_the/
 16. Pepe (@pepethemenace) | TikTok, accessed January 5, 2025, https://www.tiktok.com/@pepethemenace
-
