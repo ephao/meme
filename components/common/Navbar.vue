@@ -1,4 +1,6 @@
 <script setup>
+import { ref, computed } from '#imports'
+
 // 定义导航菜单项
 const menuitems = [
   {
@@ -13,7 +15,6 @@ const menuitems = [
     title: "冲狗秘籍", // FAQ页面
     path: "/fundamental",
   },
-
 ];
 
 // 控制移动端菜单的开关状态
@@ -37,6 +38,12 @@ const toggleColorMode = () => {
 const isDarkMode = computed(() => {
   return colorMode.value === 'dark'
 })
+
+// Search functionality
+const searchModalRef = ref(null)
+const handleSearch = () => {
+  searchModalRef.value.isOpen = true
+}
 </script>
 
 <template>
@@ -86,7 +93,7 @@ const isDarkMode = computed(() => {
         <div>
           <div class="hidden lg:flex items-center gap-4">
             <!-- 搜索按钮 -->
-            <button
+            <button @click="handleSearch"
               class="ml-9 pt-1.5 text-gray-500 dark:text-slate-600 hover:text-gray-700 dark:hover:text-gray-400">
               <Icon name="ph:magnifying-glass-bold" class="h-5 w-5" />
             </button>
@@ -118,7 +125,7 @@ const isDarkMode = computed(() => {
           </NuxtLink>
           <div class="flex items-center">
             <!-- 搜索按钮 -->
-            <button
+            <button @click="handleSearch"
               class="mr-4 pt-1.5 text-gray-500 dark:text-slate-600 hover:text-gray-700 dark:hover:text-gray-200">
               <Icon name="ph:magnifying-glass-bold" class="h-5 w-5" />
             </button>
@@ -158,18 +165,11 @@ const isDarkMode = computed(() => {
               </NuxtLink>
             </li>
           </ul>
-          <!-- 移动端底部链接 -->
-          <!-- <div class="flex items-center mt-3 gap-4">
-            <LandingLink href="https://s.zhaikr.com/web-course-1" size="md" :block="true"
-              styleName="muted" target="_blank" rel="noopener"
-              className="hover:text-gray-500 transition-colors duration-300">进入课程
-            </LandingLink>
-            <LandingLink href="https://buy.stripe.com/fZe9AW506dnr3IY6oq?prefilled_promo_code=XMAS2024" size="md"
-              :block="true" styleName="primary" target="_blank" rel="noopener"
-              className="transition-colors duration-300">立即加入</LandingLink>
-          </div> -->
         </nav>
       </header>
     </CommonContainer>
   </div>
+
+  <!-- Search Modal -->
+  <CommonSearchModal ref="searchModalRef" />
 </template>
